@@ -1,0 +1,40 @@
+						<li class="news__item">
+							<a href="new.html" class="news__item-img">
+								<img src="images/news1.jpg" alt="">
+							</a>
+							<time class="news__item-date" datetime="2017-01-25">25.01.2017</time>
+							<a href="new.html" class="news__item-title">
+								<span class="news__item-caption">Нефть как исчерпаемый ресурс экономики</span>
+								<span class="news__item-anounce">Мы более семи лет успешно существуем на рынке услуг</span>
+							</a>
+						</li>
+						<li class="news__item">
+							<a href="new.html" class="news__item-img">
+								<img src="images/news2.jpg" alt="">
+							</a>
+							<time class="news__item-date" datetime="2017-02-20">20.02.2017</time>
+							<a href="new.html" class="news__item-title">
+								<span class="news__item-caption">Забытые долги будут облагаться налогом</span>
+								<span class="news__item-anounce">Мы более семи лет успешно существуем на рынке услуг</span>
+							</a>
+						</li>
+						<li class="news__item">
+							<a href="new.html" class="news__item-img">
+								<img src="images/news3.jpg" alt="">
+							</a>
+							<time class="news__item-date" datetime="2017-05-12">12.05.2017</time>
+							<a href="new.html" class="news__item-title">
+								<span class="news__item-caption">Рост популярности краудфандинга в России</span>
+								<span class="news__item-anounce">Мы более семи лет успешно существуем на рынке услуг</span>
+							</a>
+						</li>
+						<li class="news__item">
+							<a href="new.html" class="news__item-img">
+								<img src="images/news4.jpg" alt="">
+							</a>
+							<time class="news__item-date" datetime="2017-07-30">30.07.2017</time>
+							<a href="new.html" class="news__item-title">
+								<span class="news__item-caption">Микрофинансовый Форум 2017: Итоги</span>
+								<span class="news__item-anounce">Мы более семи лет успешно существуем на рынке услуг</span>
+							</a>
+						</li>

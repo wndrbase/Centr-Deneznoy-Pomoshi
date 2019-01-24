@@ -1,0 +1,151 @@
+<!--#set var="document_root" value="/html/" -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title><!--#echo var="title" --></title>
+	<meta charset="utf-8">
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link href="css/nouislider.css" rel="stylesheet">
+	<link href="css/select2.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon">
+	<link href="favicon.png" rel="apple-touch-icon-precomposed">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+	<div class="frontend <!--#echo var=page -->">
+
+		<header id="header" class='header<!--#if expr="$main_bg"--> header--background<!--#endif--> clr'>
+
+			<div class="center header--center clr">
+
+				<a href="javascript:;" class="btn-alert_up header__geocity" data-alert-up="geo">Выберите город</a>
+				
+				<!-- <form class="header__geocity">
+					<select class="select2">
+						<option value="none">Выберите город</option>
+						<option value="1">Москва</option>
+						<option value="2">Санкт-Петербург</option>
+						<option value="3">Северодвинск</option>
+					</select>
+				</form> -->
+
+				<div class="header__phone">
+					Телефон бесплатной горячей линии
+					<a href="tel:88003028302">8 800 302-8-302</a>
+				</div>
+
+				<a href="javascript:;" class="menu-mobile-toggle__line visible-sm"><span></span></a>
+
+				<a href='<!--#echo var="document_root" -->' class="header__logo"></a>
+
+
+				<nav class="header__nav clr">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="about.html">О компании</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="offices.html">Адреса отделений</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="stock.html">Акции</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="reviews.html">Отзывы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+					<a href="javascript:;" class="btn btn-alert_up header__apply-btn" data-alert-up="order-loan">Оставить заявку</a>
+				</nav>
+
+				<!--#if expr="$page = home"-->
+
+					<div class="slide clr">
+						<ul class="slide__list bxslider">
+							<li class="slide__item">							
+								<div class="slide__anounce">
+									<div class="slide__title">Акция «Неделя даром»</div>
+									<div class="slide__text">У Вас появилась уникальная возможность получить займ на карту мгновенно, круглосуточно, без отказа постоянным клиентам.</div>
+									<a class="btn slide__more-btn">Узнать подробнее</a>
+								</div>
+								<picture>
+									<source media="(min-width: 960px)" srcset="images/main_slider__1140.png">
+									<img src="images/main_slider__720.png" alt="">
+								</picture>
+							</li>
+							<li class="slide__item">							
+								<div class="slide__anounce">
+									<div class="slide__title">Возвращай любым способом!</div>
+									<div class="slide__text">У Вас появилась уникальная возможность получить займ на карту мгновенно, круглосуточно, без отказа постоянным клиентам.</div>
+									<a class="btn slide__more-btn">Узнать подробнее</a>
+								</div>
+								<picture>
+									<source media="(min-width: 960px)" srcset="images/main_slider__1140.png">
+									<img src="images/main_slider__720.png" alt="">
+								</picture>
+							</li>
+							<li class="slide__item">							
+								<div class="slide__anounce">
+									<div class="slide__title">Акция «Низкий процент»</div>
+									<div class="slide__text">У Вас появилась уникальная возможность получить займ на карту мгновенно, круглосуточно, без отказа постоянным клиентам.</div>
+									<a class="btn slide__more-btn">Узнать подробнее</a>
+								</div>
+								<picture>
+									<source media="(min-width: 960px)" srcset="images/main_slider__1140.png">
+									<img src="images/main_slider__720.png" alt="">
+								</picture>
+							</li>
+						</ul>
+					</div>
+
+				<!--#endif-->
+
+				<!--#if expr="$main_bg"-->
+					<div class="header__bg clr">
+						<div class="header__bg-content">
+							<h1><!--#echo var="title" --></h1>
+							<ul class="header__breadcrumbs-list">
+								<li class="header__breadcrumbs-item"><a href="javascript:;">Главная</a></li>
+								<li class="header__breadcrumbs-item header__breadcrumbs-item--separator">/</li>
+								<li class="header__breadcrumbs-item"><!--#echo var="title" --></li>
+							</ul>
+						</div>
+						<!--#if expr="$page = page-reviews"-->
+							<div class="header__review-text">
+								Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+							</div>
+						<!--#endif-->
+						<img src='<!--#echo var="main_bg" -->' alt="">
+					</div>
+				<!--#endif-->
+					
+				<a href="javascript:;" class="btn-alert_up callback-order animated" data-alert-up="callback">
+					<div class="callback-order__icon"></div>
+					<div class="callback-order__text">Нужен обратный звонок?</div>
+				</a>
+
+			</div>
+			
+		</header><!-- /header -->
+
+		<main class="main<!--#if expr='$main_bg'--> main--pad<!--#endif-->">
+
+			<!--#if expr="!$main_bg && $page != 'home' && $page != 'page-contacts'"-->
+			<div class="center clr">
+				<h1><!--#echo var="title" --></h1>
+				<ul class="breadcrumbs-list">
+					<li class="breadcrumbs-item"><a href="javascript:;">Главная</a></li>
+					<li class="breadcrumbs-item breadcrumbs-item--separator">/</li>
+					<li class="breadcrumbs-item"><!--#echo var="title" --></li>
+				</ul>				
+			</div>
+			<!--#endif-->

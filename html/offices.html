@@ -1,0 +1,103 @@
+<!--#set var="title" value="Адреса отделений" -->
+<!--#set var="main_bg" value="images/offices__1140.png" -->
+<!--#set var="page" value="page-offices" -->
+<!--#include file="_header.shtml"-->
+
+			<div class="center clr">
+
+				<div class="offices clr">
+
+					<form class="offices__filter clr">
+						<span class="offices__filter-label">Офисы компании:</span>
+						<span class="offices__filter-box">
+							<select name="REGION">
+								<option value="none">Выбрать область</option>
+								<option value="1">Архангельсякая область</option>
+								<option value="2">Ленинградская область</option>
+								<option value="3">Московская область</option>
+							</select>
+						</span>
+						<span class="offices__filter-box offices__filter-box--last">
+							<select name="CITY">
+								<option value="none">Выбрать город</option>
+								<option value="1">Северодвинск</option>
+								<option value="2">Санкт-Петербург</option>
+								<option value="3">Москва</option>
+							</select>
+						</span>
+					</form>
+					
+					<div class="offices__map">
+						<div id="map"></div>
+						<script>
+							function initMap() {
+								var marker = {lat: 55.744528, lng: 37.605397};
+								var map = new google.maps.Map(document.getElementById('map'), {
+									zoom: 14,
+									center: marker
+								});
+								var marker = new google.maps.Marker({
+									position: marker,
+									map: map,
+									title: 'Храм Христа Спасителя',
+									icon: {
+										//url: "img/placemark.svg",
+										//scaledSize: new google.maps.Size(29, 31)
+										url: "img/placemark.png",
+										scaledSize: new google.maps.Size(29, 31)
+									}
+								});
+							}
+
+							initMap();
+						</script>
+					</div>
+
+					<ul class="offices__list">
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 870-52-92</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">Ленинградский пр-кт, дом № 327 строение 2</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 588-66-48</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">пр. Чумбарова-Лучинского,  д. № 4</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 563-56-34</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">ул. Кировская 15</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 563-56-37</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">ул. Гагарина дом № 13  строение 1</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+<!--#include file="_footer.shtml"-->

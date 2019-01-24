@@ -1,0 +1,53 @@
+			
+
+			</main>
+			
+			<!--#if expr="$page = 'page-reviews' || $page = 'page-offices' || $page = 'page-contacts'"-->
+			<!--#include file="_promo-block.shtml"-->
+			<!--#endif-->
+
+			<!--#include file="_alert_up.shtml"-->
+
+			<footer class="footer">
+
+				<div class="center clr">
+
+					<div class="footer__copyright">
+						<p>&copy; 2013-2017, Центр Денежной Помощи. </p>
+						<p>&copy; 2013-Регистрационный номер записи<br>в государственном реестре №651303111004012.</p>
+					</div>
+
+					<a href="javascript:;" class="footer__orbita"></a>
+
+					<ul class="footer__menu-list clr">
+						<li class="footer__menu-item"><a href="about.html">О компании</a></li>
+						<li class="footer__menu-item"><a href="rent.html">Партнёрам</a></li>
+						<li class="footer__menu-item"><a href="news.html">Новости</a></li>
+						<li class="footer__menu-item"><a href="jobs.html">Вакансии</a></li>
+						<li class="footer__menu-item"><a href="organization.html">Организации</a></li>
+						<li class="footer__menu-item"><a href="contacts.html">Контакты</a></li>
+					</ul>
+					
+				</div>
+
+			</footer>
+
+		</div>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjPbyYLGxOh_SB3w_yu2s3cjru7TU8sGY&amp;callback=initMap" async defer></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/jquery.touchwipe.min.js"></script>
+		<script src="js/wNumb.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/select2/select2.min.js"></script>
+		<script src="js/select2/i18n/ru.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/calculator.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/add.js"></script>
+
+
+</body>
+</html>

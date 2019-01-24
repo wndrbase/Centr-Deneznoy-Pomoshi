@@ -1,0 +1,362 @@
+<!--#set var="title" value="Центр денежной помощи" -->
+<!--#set var="page" value="home" -->
+<!--#include file="_header.shtml"-->
+
+			<div class="center clr">
+			
+				<div class="calculator">
+
+					<form action="" method="get" class="calculator__form">
+
+						<input class="calculator__data-values hide" type="radio" checked="checked"
+							data-sum-step="100"
+							data-sum-min="1000"
+							data-sum-max="50000"
+							data-sum-value="12000"
+							data-date-step="1"
+							data-date-min="1"
+							data-date-max="30"
+							data-date-value="18"
+							data-rate="1.5">
+
+						<div class="calculator__head visible-xs">
+							<a href="javascript:;" class="btn btn--red btn-alert_up calculator__select-office-btn" data-alert-up="calc-geo">Выберите офис</a>
+						</div>
+
+						<ul class="calculator__head hidden-xs">
+							<li>
+								<select name="REGION">
+									<option value="none">Выбрать область</option>
+									<option value="1">Архангельсякая область</option>
+									<option value="2">Ленинградская область</option>
+									<option value="3">Московская область</option>
+								</select>
+							</li>
+							<li>
+								<select name="CITY">
+									<option value="none">Выбрать город</option>
+									<option value="1">Северодвинск</option>
+									<option value="2">Санкт-Петербург</option>
+									<option value="3">Москва</option>
+								</select>
+							</li>
+							<li>
+								<select name="OFFICE">
+									<option value="none">Выбрать отделение</option>
+									<option value="1">пр. Чумбарова-Лучинского,  д. № 4</option>
+									<option value="2">ул. Советов, дом № 4, оф.103</option>
+									<option value="3">ул. Горончаровского, д. 44</option>
+								</select>
+							</li>
+							<li>
+								<select name="LOAN_VIEW" class="calculator__btn-toggle">
+									<option value="none">Статус клиента</option>
+									<option value="1">Первый</option>
+									<option value="2">Важный</option>
+									<option value="3">Долгосрочный</option>
+								</select>
+							</li>
+						</ul>
+
+						<div class="calculator__body clr">
+							
+							<div class="calculator__left">
+								<div class="calculator__box clr">
+									<div class="calculator__box-left">
+										<div class="calculator__box-label">Вы занимаете</div>
+										<div class="calculator__box-input">
+											<input type="text" name="SUM" value="7 400" id="sum-set"><span class="calculator__box-currency">₽</span>
+										</div>										
+									</div>
+									<div class="calculator__box-right hidden-xs">
+										<div class="calculator__box-label calculator__box-label--min">Комиссия за пользование займом <span class="calculator__sum-commission">1 170</span> <span class="calculator__box-currency">₽</span></div>	
+									</div>
+									<div class="clr"></div>
+									<div class="calculator__slider">
+										<div id="calc-sum-slider"></div>
+										<div class="calculator__slider-from">0</div>
+										<div class="calculator__slider-to">50000</div>
+									</div>
+								</div>
+								<div class="calculator__box clr">
+									<div class="calculator__box-left">
+										<div class="calculator__box-label">На срок</div>
+										<div class="calculator__box-input calculator__box-input--days">
+											<input type="text" name="TIME" value="20" id="date-set"><span class="calculator__box-days" data-declension="день,дня,дней">дней</span>
+										</div>										
+									</div>
+									<div class="calculator__box-right hidden-xs">
+										<div class="calculator__box-label calculator__box-label--min">Дата возврата кредита <span class="calculator__date-comeback">25 апреля</span></div>									
+									</div>
+									<div class="clr"></div>
+									<div class="calculator__slider">
+										<div id="calc-date-slider"></div>
+										<div class="calculator__slider-from">1</div>
+										<div class="calculator__slider-to">30</div>
+									</div>
+								</div>
+
+								<div class="calculator__box calculator__box--mobile visible-xs clr">
+									<div class="calculator__box-label calculator__box-label--min">Комиссия <span class="calculator__sum-commission">1 170</span> <span class="calculator__box-currency">₽</span></div>	
+								</div>
+								<div class="calculator__box calculator__box--mobile visible-xs clr">
+									<div class="calculator__box-label calculator__box-label--min">Дата возврата кредита <span class="calculator__date-comeback">25 апреля</span></div>
+								</div>
+								<div class="calculator__box calculator__box--mobile visible-xs clr">
+									<div class="calculator__box-label calculator__box-label--min">Сумма к возврату <span class="calculator__total-sum"><span>1 170</span></span> <span class="calculator__box-currency">₽</span></div>
+								</div>
+							</div>
+							
+							<div class="calculator__right">
+								<div class="calculator__total hidden-sm">
+									<div class="calculator__total-text">Сумма к возврату:</div>
+									<div class="calculator__total-sum"><span>8 570</span> <b>₽</b></div>
+								</div>
+								<label class="btn btn--red btn-alert_up calculator__btn" data-alert-up="order-loan">Оставить заявку</label>								
+							</div>
+
+						</div>
+					</form>
+				</div>	
+
+				<div class="advantages">
+					<div class="overtitle advantages__q">Почему выбирают нас?</div>
+					<div class="h1">Наши преимущества</div>
+					<ul class="advantages__list clr">
+						<li class="advantages__item">
+							<div class="advantages__item-icon"></div>
+							<div class="advantages__item-caption">Быстрое одобрение</div>
+							<div class="advantages__item-text">Если у вас остались вопросы, звоните в любое время по этому бесплатному номеру или закажите обратный звонок, и мы перезвоним вам сами.</div>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__item-icon"></div>
+							<div class="advantages__item-caption">Без кредитной истории</div>
+							<div class="advantages__item-text">Если у вас остались вопросы, звоните в любое время по этому бесплатному номеру или закажите обратный звонок, и мы перезвоним вам сами.</div>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__item-icon"></div>
+							<div class="advantages__item-caption">Конфиденциальность</div>
+							<div class="advantages__item-text">Если у вас остались вопросы, звоните в любое время по этому бесплатному номеру или закажите обратный звонок, и мы перезвоним вам сами.</div>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__item-icon"></div>
+							<div class="advantages__item-caption">Без справок</div>
+							<div class="advantages__item-text">Если у вас остались вопросы, звоните в любое время по этому бесплатному номеру или закажите обратный звонок, и мы перезвоним вам сами.</div>
+						</li>
+					</ul>
+				</div>			
+
+			</div>
+
+			<hr>
+
+			<div class="center clr">
+
+				<div class="news news--home">
+					<div class="h1">Новости компании</div>
+					<div class="news__all"><a href="news.html">Все новости</a></div>
+					<ul class="news__list clr">
+						<!--#include file="_news-list.shtml"-->
+					</ul>
+				</div>
+
+			</div>
+
+			<!--#include file="_promo-block.shtml"-->
+
+			<div class="center clr">
+
+				<div class="reviews reviews--home">				
+					<div class="overtitle">О нас говорят</div>
+					<div class="h1">Отзывы клиентов</div>
+					<div class="reviews__list">
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review1.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Алевтина Вениаминовна</div>
+									<div class="reviews__item-post">Ведущая на радио</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>								
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review2.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Новиков Валентин</div>
+									<div class="reviews__item-post">Водитель с 20-летним стажем</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review3.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Андрей Поплосоненко</div>
+									<div class="reviews__item-post">Просто хороший человек</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review3.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Андрей Поплосоненко</div>
+									<div class="reviews__item-post">Просто хороший человек</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>	
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review2.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Новиков Валентин</div>
+									<div class="reviews__item-post">Водитель с 20-летним стажем</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review1.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Алевтина Вениаминовна</div>
+									<div class="reviews__item-post">Ведущая на радио</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review1.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Алевтина Вениаминовна</div>
+									<div class="reviews__item-post">Ведущая на радио</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review2.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Новиков Валентин</div>
+									<div class="reviews__item-post">Водитель с 20-летним стажем</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+						<article class="reviews__item">
+							<div class="reviews__item-box">
+								<div class="reviews__item-photo">
+									<img src="images/review3.jpg" alt="">
+								</div>
+								<div class="reviews__item-person">
+									<div class="reviews__item-name">Андрей Поплосоненко</div>
+									<div class="reviews__item-post">Просто хороший человек</div>
+								</div>
+								<div class="reviews__item-text">
+									Большое спасибо компании за быстроту решения и помощь.Очень довольна. Выручили в трудную минуту,когда очень нужна была помощь.
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			</div>
+
+			 <hr>
+			
+			<div class="map">				
+				<div class="overtitle">Адреса отделений</div>
+				<div class="h1">Ближайшие к вам офисы</div>
+				<div id="map"></div>
+			</div>
+
+			<script>
+				function initMap() {
+					var marker = {lat: 55.744528, lng: 37.605397};
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 14,
+						center: marker
+					});
+					var marker = new google.maps.Marker({
+						position: marker,
+						map: map,
+						title: 'Храм Христа Спасителя',
+						icon: {
+							//url: "img/placemark.svg",
+							//scaledSize: new google.maps.Size(29, 31)
+							url: "img/placemark.png",
+							scaledSize: new google.maps.Size(29, 31)
+						}
+					});
+
+					// contentString - это переменная в которой хранится содержимое информационного окна.
+				    // Может содержать, как HTML-код, так и обычный текст.
+				    // Если используем HTML, то в этом случае у нас есть возможность стилизовать окно с помощью CSS.
+				    var contentString = '<div class="map-box">' +
+				                            '<h3>Lorem ipsum dolor</h3>' +
+				                            '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sed.</p>' +
+				                        '</div>';
+				 
+				    // Создаем объект информационного окна и помещаем его в переменную infoWindow
+				    var infoWindow = new google.maps.InfoWindow({
+				        content: contentString
+				    });
+				 
+				    // Отслеживаем клик по нашему маркеру
+				    google.maps.event.addListener(marker, "click", function() {
+				        // infoWindow.open - показывает информационное окно.
+				        // Параметр map - это переменная содержащие объект карты (объявлена на 8 строке)
+				        // Параметр marker - это переменная содержащие объект маркера (объявлена на 23 строке)
+				        infoWindow.open(map, marker);
+				    });
+				 
+				    // Отслеживаем клик в любом месте карты
+				    google.maps.event.addListener(map, "click", function() {
+				        // infoWindow.close - закрываем информационное окно.
+				        infoWindow.close();
+				    });
+				}
+
+				initMap();
+			</script>
+
+<!--#include file="_footer.shtml"-->

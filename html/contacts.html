@@ -1,0 +1,191 @@
+<!--#set var="title" value="Контактная информация" -->
+<!--#set var="page" value="page-contacts" -->
+<!--#include file="_header.shtml"-->
+
+			<div class="center clr">
+
+				<div class="contacts clr">
+					<h1>Контактная информация</h1>
+
+					<div class="contacts__common clr">
+						<div class="contacts__common-left">
+							<div class="contacts__common-title">Компания «Центр Денежной Помощи»</div>
+							<div class="contacts__common-loc">Адрес: Архангельская обл., г. Северодвинск, ул. Комсомольска 34а</div>
+							<div class="contacts__common-desc">Режим работы: понедельник-пятница с 09:00 до 17:00</div>							
+						</div>
+						<div class="contacts__common-right">
+							<div class="contacts__common-title">Единый контактный телефон:</div>
+							<div class="contacts__common-loc">8 (800) 302-8-302</div>
+							<div class="contacts__common-desc">Звонок бесплатный</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="organizations">
+					<ul class="organizations__list clr">
+						<li class="organizations__item">
+							<div class="organizations__name">Центр Денежной Помощи</div>
+							<a href="javascript:;" class="organizations__show-requisites">Смотреть реквизиты</a>
+							<div class="organizations__requisites">
+								<p>
+									ИНН 2902070715 / КПП 290201001<br>
+									ОГРН 1112932002149<br>
+									Р/с 40701810817090000008<br>
+									Кор/с 30101810100000000752<br>
+									Санкт-Петербургский филиал «Банк СГБ»<br>
+									БИК 044030752
+								</p>
+							</div>
+						</li>
+						<li class="organizations__item">
+							<div class="organizations__name">Центр Денежной Помощи</div>
+							<a href="javascript:;" class="organizations__show-requisites">Смотреть реквизиты</a>
+							<div class="organizations__requisites">
+								<p>
+									ИНН 2902070715 / КПП 290201001<br>
+									ОГРН 1112932002149<br>
+									Р/с 40701810817090000008<br>
+									Кор/с 30101810100000000752<br>
+									Санкт-Петербургский филиал «Банк СГБ»<br>
+									БИК 044030752
+								</p>
+							</div>
+						</li>
+						<li class="organizations__item">
+							<div class="organizations__name">Центр Денежной Помощи</div>
+							<a href="javascript:;" class="organizations__show-requisites">Смотреть реквизиты</a>
+							<div class="organizations__requisites">
+								<p>
+									ИНН 2902070715 / КПП 290201001<br>
+									ОГРН 1112932002149<br>
+									Р/с 40701810817090000008<br>
+									Кор/с 30101810100000000752<br>
+									Санкт-Петербургский филиал «Банк СГБ»<br>
+									БИК 044030752
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="offices offices--contacts clr">
+
+					<form class="offices__filter clr">
+						<span class="offices__filter-label">Офисы компании:</span>
+						<span class="offices__filter-box">
+							<select name="REGION">
+								<option value="none">Выбрать область</option>
+								<option value="1">Архангельсякая область</option>
+								<option value="2">Ленинградская область</option>
+								<option value="3">Московская область</option>
+							</select>
+						</span>
+						<span class="offices__filter-box offices__filter-box--last">
+							<select name="CITY">
+								<option value="none">Выбрать город</option>
+								<option value="1">Северодвинск</option>
+								<option value="2">Санкт-Петербург</option>
+								<option value="3">Москва</option>
+							</select>
+						</span>
+					</form>
+					
+					<div class="offices__map">
+						<div id="map"></div>
+						<script>
+							function initMap() {
+								var marker = {lat: 55.744528, lng: 37.605397};
+								var map = new google.maps.Map(document.getElementById('map'), {
+									zoom: 14,
+									center: marker
+								});
+								var marker = new google.maps.Marker({
+									position: marker,
+									map: map,
+									title: 'Храм Христа Спасителя',
+									icon: {
+										//url: "img/placemark.svg",
+										//scaledSize: new google.maps.Size(29, 31)
+										url: "img/placemark.png",
+										scaledSize: new google.maps.Size(29, 31)
+									}
+								});
+							}
+
+							initMap();
+						</script>
+					</div>
+
+					<ul class="offices__list">
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 870-52-92</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">Ленинградский пр-кт, дом № 327 строение 2</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 588-66-48</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">пр. Чумбарова-Лучинского,  д. № 4</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 563-56-34</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">ул. Кировская 15</span>
+							</div>
+						</li>
+						<li class="offices__item">
+							<div class="offices__line">
+								<span class="offices__line-label">Телефон</span>
+								<span class="offices__line-value">+7 (911) 563-56-37</span>
+							</div>
+							<div class="offices__line">
+								<span class="offices__line-label">Адрес</span>
+								<span class="offices__line-value">ул. Гагарина дом № 13  строение 1</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<form class="form contacts__form">
+				<div class="center clr">
+					<div class="h1">Обратная связь</div>
+					<div class="contacts__form-box">
+						<div class="input-line input-line--left"><input type="text" name="NAME" class="input" placeholder="Имя, фамилия"></div>
+						<div class="input-line input-line--right"><input type="tel" name="PHONE" class="input mask-tel" placeholder="Контактный телефон"></div>
+						<div class="input-line input-line--left"><input type="text" name="ADDRESS" class="input" placeholder="Почта"></div>
+						<div class="input-line input-line--right">
+							<select name="SUBJECT">
+								<option value="none">Выберите тему</option>
+								<option value="1">Нужна консультация</option>
+								<option value="2">Вопросы по работе сайта</option>
+								<option value="3">Оставить отзыв</option>
+							</select>
+						</div>
+						<div class="input-line">
+							<textarea name="MESSAGE" class="input" placeholder="Ваше сообщение"></textarea>							
+						</div>
+						<div class="input-line input-line--submit">
+							<label class="btn btn--red contacts__form-btn">Отправить<input type="submit"></label>
+						</div>
+					</div>
+				</div>
+			</form>
+
+<!--#include file="_footer.shtml"-->

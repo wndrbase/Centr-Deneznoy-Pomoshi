@@ -1,0 +1,136 @@
+		<div class="alert_up alert_up--hide flexbox flexbox--center flexbox--column flexbox--align-center">
+		
+			<div class="alert_up__window alert_up__window--callback">
+
+				<form class="alert_up__box" novalidate autocomplete="off">
+					<h3>Обратный звонок</h3>
+					<div class="input-line">
+						<input type="text" name="NAME" class="input" placeholder="Имя">						
+					</div>
+					<div class="input-line">
+						<input type="tel" name="PHONE" class="input mask-tel" placeholder="Телефон">						
+					</div>
+					<div class="input-line input-line--submit">
+						<label class="btn btn--red">Отправить<input type="submit"></label>
+					</div>
+					<a class="alert_up__close ico ico--close"></a>
+				</form>
+
+			</div>
+		
+			<div class="alert_up__window alert_up__window--jobs">
+
+				<form class="alert_up__box" novalidate autocomplete="off">
+					<h3>Отклик на вакансию</h3>
+					<p class="job-name">Технический эксперт</p>
+					<p class="job-city">Санкт-Петербург</p>
+					<div class="input-line">
+						<input type="text" name="NAME" class="input" placeholder="Имя">						
+					</div>
+					<div class="input-line">
+						<input type="tel" name="PHONE" class="input mask-tel" placeholder="Телефон">						
+					</div>
+					<div class="input-line clr">						
+						<label class="input input--file">Прикрепить резюме<input type="file" name="RESUME" class="input"></label>
+						<span>Файл не выбран</span>					
+					</div>
+					<div class="input-line input-line--submit">
+						<label class="btn btn--red">Отправить отклик<input type="submit"></label>
+					</div>
+					<a class="alert_up__close ico ico--close"></a>
+				</form>
+
+			</div>
+		
+			<div class="alert_up__window alert_up__window--order-loan">
+
+				<form class="alert_up__box" novalidate autocomplete="off">
+					<h3>Оформление заявки</h3>
+					<div class="input-line">
+						<input type="text" name="NAME" class="input" placeholder="ФИО">						
+					</div>
+					<div class="input-line">
+						<input type="tel" name="PHONE" class="input mask-tel" placeholder="Телефон">						
+					</div>
+					<div class="input-line input-line--submit">
+						<label class="btn btn--red">Оставить заявку<input type="submit"></label>
+					</div>
+					<a class="alert_up__close ico ico--close"></a>
+				</form>
+
+
+			</div>
+		
+			<div class="alert_up__window alert_up__window--calc-geo">
+
+				<form class="alert_up__box" novalidate autocomplete="off">
+					<h3>Выбор офиса</h3>
+					<div class="input-line">
+						<select name="REGION">
+							<option value="none">Выбрать область</option>
+							<option value="1">Архангельсякая область</option>
+							<option value="2">Ленинградская область</option>
+							<option value="3">Московская область</option>
+						</select>					
+					</div>
+					<div class="input-line">
+						<select name="CITY">
+							<option value="none">Выбрать город</option>
+							<option value="1">Северодвинск</option>
+							<option value="2">Санкт-Петербург</option>
+							<option value="3">Москва</option>
+						</select>				
+					</div>
+					<div class="input-line">
+						<select name="OFFICE">
+							<option value="none">Выбрать отделение</option>
+							<option value="1">пр. Чумбарова-Лучинского,  д. № 4</option>
+							<option value="2">ул. Советов, дом № 4, оф.103</option>
+							<option value="3">ул. Горончаровского, д. 44</option>
+						</select>					
+					</div>
+					<div class="input-line">
+						<select name="LOAN_VIEW" class="calculator__btn-toggle">
+							<option value="none">Статус клиента</option>
+							<option value="1">Первый</option>
+							<option value="2">Важный</option>
+							<option value="3">Долгосрочный</option>
+						</select>					
+					</div>
+					<div class="input-line input-line--submit">
+						<label class="btn btn--red">Выбрать<input type="submit"></label>
+					</div>
+					<a class="alert_up__close ico ico--close"></a>
+				</form>
+
+			</div>
+		
+			<div class="alert_up__window alert_up__window--geo">
+
+				<form class="alert_up__box" novalidate autocomplete="off">
+					<h3>Выберите регион</h3>
+					<div class="input-line">
+						<select name="REGION">
+							<option value="none">Выбрать область</option>
+							<option value="1">Архангельсякая область</option>
+							<option value="2">Ленинградская область</option>
+							<option value="3">Московская область</option>
+						</select>					
+					</div>
+					<div class="input-line">
+						<select name="CITY">
+							<option value="none">Выбрать город</option>
+							<option value="1">Северодвинск</option>
+							<option value="2">Санкт-Петербург</option>
+							<option value="3">Москва</option>
+						</select>				
+					</div>
+					<div class="input-line input-line--submit">
+						<label class="btn btn--red">Выбрать<input type="submit"></label>
+					</div>
+					<a class="alert_up__close ico ico--close"></a>
+				</form>
+
+			</div>
+
+		</div>
