@@ -297,7 +297,7 @@ $APPLICATION->SetTitle("Контакты");
 
 			<?if(USE_GOOGLE_CAPTCHA_V2):?>
 			<div class="input-line">
-				<div id="g-recaptcha-feedback"></div>
+				<div id="g-recaptcha-feedback" class="g-recaptcha"></div>
 			</div>
 			<?endif;?>
 

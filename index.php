@@ -31,6 +31,7 @@ $APPLICATION->SetTitle("Центр денежной помощи");
 			<input type="hidden" name="LOAN_VIEW_UID">
 			<input type="hidden" name="LOAN_STOCK_UID">
 			<input type="hidden" name="AJAX_LOAN" value="Y">
+			<input type="hidden" name="g-recaptcha-response" value="">
 
 			<div class="calculator__head visible-xs">
 				<a href="javascript:;" class="btn btn--red btn-alert_up calculator__select-office-btn" data-alert-up="calc-geo">Выберите офис</a>
