@@ -2310,27 +2310,21 @@ a.attach-files-item__download {
 }
 
 .block-hh {
-	width: 250px;
-	float: right;
-}
-
-.block-hh__title {
 	text-align: center;
-	margin-bottom: 10px;
-
+	line-height: 62px;
 }
 
-.block-hh__title a {
-	font-size: 19px;
+.block-hh a {
+	font-size: 50px;
 	font-weight: bold;
 }
 
-.block-hh__img {
-	text-align: center;
+.block-hh span {
+	margin-right: 50px;
 }
 
-.block-hh__img img {
-	width: 250px;
+.block-hh img {
+	width: 300px;
 }
 
 .offices {

@@ -87,12 +87,7 @@ $APPLICATION->SetTitle("Вакансии");
 	</ul>
 
 	<div class="block-hh">
-		<div class="block-hh__title">
-			<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank">ХОЧЕШЬ РАБОТАТЬУ НАС?</a>
-		</div>
-		<div class="block-hh__img">
-			<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank"><img src="/upload/images/HH.png" alt="Вакансии на HH.ru" title="Вакансии на HH.ru"></a>
-		</div>
+		<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank"><span>ХОЧЕШЬ РАБОТАТЬ У НАС?</span> <img src="/upload/images/HH.png" alt="Вакансии на HH.ru" title="Вакансии на HH.ru"></a>
 	</div>
 
 
