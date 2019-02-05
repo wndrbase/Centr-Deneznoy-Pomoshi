@@ -2309,6 +2309,30 @@ a.attach-files-item__download {
     margin-top: -5px;
 }
 
+.block-hh {
+	width: 250px;
+	float: right;
+}
+
+.block-hh__title {
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+.block-hh__title a {
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.block-hh__img {
+	text-align: center;
+}
+
+.block-hh__img img {
+	width: 250px;
+}
+
 .offices {
 	margin: 14px 0 60px 0;
 }

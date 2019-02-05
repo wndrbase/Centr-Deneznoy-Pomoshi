@@ -806,6 +806,13 @@
 		width: 75%;
 	}
 
+
+	.block-hh {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
 }
 
 /* 768
@@ -1175,7 +1182,6 @@
 	.footer__full-version {
 		text-align: center;
 	}
-
 
 }
 

@@ -62,7 +62,7 @@ $APPLICATION->SetTitle("Вакансии");
 	);?>
 
 	<div class="h1">Работа в Центре Денежной Помощи</div>
-	
+
 	<ul class="blue-icons-list">
 		<li class="blue-icons-list__item">
 			<div class="blue-icons-list__ico blue-icons-list__ico--clients"></div>
@@ -85,5 +85,16 @@ $APPLICATION->SetTitle("Вакансии");
 			<?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
 		</li>
 	</ul>
+
+	<div class="block-hh">
+		<div class="block-hh__title">
+			<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank">ХОЧЕШЬ РАБОТАТЬУ НАС?</a>
+		</div>
+		<div class="block-hh__img">
+			<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank"><img src="/upload/images/HH.png" alt="Вакансии на HH.ru" title="Вакансии на HH.ru"></a>
+		</div>
+	</div>
+
+
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
