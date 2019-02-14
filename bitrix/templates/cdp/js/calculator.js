@@ -96,13 +96,44 @@
 
 		}
 
+		var bSetLoanView = false,
+			bDisableRangeDate = false;
+
+		//Виды: основной, пенсионный, военнослужащие
+		if(
+			btnActive.attr('data-loan-view-uid') == '4f1d443a-1fb5-11e9-0e85-000c296183dd' ||
+			btnActive.attr('data-loan-view-uid') == '67b6fc3a-1fbe-11e9-0e85-000c296183dd' ||
+			btnActive.attr('data-loan-view-uid') == 'e7da2b9a-1fb8-11e9-0e85-000c296183dd'
+		) {
+			dateMin = 16;
+			dateMax = 36;
+			bSetLoanView = true;
+		}
 
 		//Если это акция Новый клиент
 		if(btnActive.attr('data-stock-uid') == '6310fda2-c258-11e8-889a-000c296183dd') {
+			dateMin = 21;
+			dateMax = 30;
 			sumMax = 10000;
 			isStock = true;
 		}
-		else {
+		//день рождения
+		else if(btnActive.attr('data-stock-uid') == 'aebeb774-c250-11e8-889a-000c296183dd') {
+			dateMin = 21;
+			dateMax = 36;
+			sumMin = 5000;
+			sumMax = 30000;
+		}
+		//друзьям
+		else if(btnActive.attr('data-stock-uid') == 'b02afc00-c253-11e8-889a-000c296183dd') {
+			bDisableRangeDate = true;
+			dateMin = 1;
+			dateMax = 30;
+			sumMin = 5000;
+			sumMax = 30000;
+		}
+		//else if(!bSetLoanView) {
+		else if(!bSetLoanView) {
 			sumMax = 30000;
 			sumValue = 12000;
 			isStock = false;
@@ -151,7 +182,10 @@
 		}
 		else {
 
-			dateValue = Math.ceil(dateMin + ((dateMax-dateMin) / 2));
+			if(bDisableRangeDate)
+				dataValue = dateMax;
+			else
+				dateValue = Math.ceil(dateMin + ((dateMax-dateMin) / 2));
 
 			noUiSliderDate.noUiSlider.updateOptions(
 				{
@@ -163,6 +197,11 @@
 				},
 				true // Boolean 'fireSetEvent'
 			);
+
+			if(bDisableRangeDate)
+				noUiSliderDate.setAttribute('disabled', true);
+			else
+				noUiSliderDate.removeAttribute('disabled');
 
 			sumValue = Math.ceil(sumMin + ((sumMax-sumMin) / 2));
 
