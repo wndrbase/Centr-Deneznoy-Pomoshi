@@ -64,7 +64,7 @@ $obParser = new CTextParser;
 			<!--RestartBuffer-->
 		</ul>
 		<?if($arResult['ALL_NEWS_COUNT'] > $arParams['NEWS_COUNT']):?>
-			<a href="javascript:void(0)" class="btn btn--red reviews__btn-more" id="ajax-load-reviews" data-all-news-count="<?=$arResult['ALL_NEWS_COUNT']?>" data-news-per-page="<?=$arParams['NEWS_COUNT']?>" data-current-page="1" data-page-url="<?=$APPLICATION->GetCurDir()?>"><?=Loc::getMessage("CDP_R_DOWNLOAD_MORE")?></a>
+			<a href="javascript:void(0)" class="btn reviews__btn-more" id="ajax-load-reviews" data-all-news-count="<?=$arResult['ALL_NEWS_COUNT']?>" data-news-per-page="<?=$arParams['NEWS_COUNT']?>" data-current-page="1" data-page-url="<?=$APPLICATION->GetCurDir()?>"><?=Loc::getMessage("CDP_R_DOWNLOAD_MORE")?></a>
 		<?endif;?>
 	</div>
 

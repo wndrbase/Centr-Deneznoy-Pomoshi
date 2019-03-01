@@ -30,7 +30,7 @@ var showAlertUp;
 		bxSlider,
 		bxSliderOptions = {
 			mode: 'fade',
-			controls: false,
+			controls: true,
 			speed: 1,
 			auto: true,
 			adaptiveHeight: true,

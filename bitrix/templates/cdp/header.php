@@ -14,6 +14,9 @@
 	global $B_INDEX_PAGE;
 	$B_INDEX_PAGE = $APPLICATION->GetCurDir() == "/" && $APPLICATION->GetCurPage() == "/" ? true : false;
 
+	global $B_ABOUT_PAGE;
+	$B_ABOUT_PAGE = $APPLICATION->GetCurDir() == "/about/" ? true : false;
+
 	global $B_404_PAGE;
 	$B_404_PAGE = http_response_code() == 404 ? true : false;
 
@@ -80,6 +83,8 @@
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/nouislider.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/select2.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/animate.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/slick.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/slick-theme.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/default.css');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
 	if(!$FULL_VERSION)
@@ -93,6 +98,7 @@
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/wNumb.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/jquery.bxslider.min.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/nouislider.min.js');
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/slick.min.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/select2/select2.min.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/select2/i18n/ru.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/jquery.maskedinput.min.js');
@@ -177,7 +183,6 @@
 
 						<a href="/" class="header__logo"></a>
 
-
 						<nav class="header__nav clr">
 
 							<div class="center clr">
@@ -199,11 +204,15 @@
 									)
 								);?>
 
-								<?if(!$B_INDEX_PAGE):?>
-									<a href="/#calculator" class="btn header__apply-btn"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
-								<?else:?>
-									<a href="javascript:;" class="btn header__apply-btn header__apply-btn--calculator"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
-								<?endif;?>
+								<div class="header__btn-holder">
+
+									<?if(!$B_INDEX_PAGE):?>
+										<a href="/#calculator" class="btn header__apply-btn btn--red"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
+									<?else:?>
+										<a href="javascript:;" class="btn header__apply-btn btn--red header__apply-btn--calculator"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
+									<?endif;?>
+
+								</div>
 
 							</div>
 
@@ -306,7 +315,7 @@
 
 		</header><!-- /header -->
 
-		<main class="main<?if(strlen($sBackgroundImage)>0):?> main--pad<?endif;?>">
+		<main class="main<?if(strlen($sBackgroundImage)>0):?> main--pad<?endif;?><?if($B_ABOUT_PAGE):?> main--no-pad-bottom<?endif;?>">
 
 			<?if(strlen($sBackgroundImage) == 0 && !$B_INDEX_PAGE && $sWrapperClass != 'page-contacts'):?>
 			<div class="center clr">
