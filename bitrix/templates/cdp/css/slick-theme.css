@@ -40,13 +40,11 @@
     border: none;
     outline: none;
 
-    background: url('../img/slick_left.svg') 0 0 no-repeat;
-
-    opacity: 0.7;
+    background: url('../img/slick_left.svg?v4') 0 0 no-repeat;
 }
 .slick-next
 {
-    background: url('../img/slick_right.svg') 0 0 no-repeat;
+    background: url('../img/slick_right.svg?v4') 0 0 no-repeat;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -56,7 +54,7 @@
     /*color: transparent;*/
     outline: none;
     /*background: transparent;*/
-    opacity: 1;
+    opacity: 0.6;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -68,7 +66,7 @@
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
-    opacity: .25;
+    opacity: .6;
 }
 
 .slick-prev:before,
@@ -87,11 +85,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -94px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -94px;
     left: auto;
 }
 .slick-prev:before
@@ -105,12 +103,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -94px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -94px;
 }
 .slick-next:before
 {

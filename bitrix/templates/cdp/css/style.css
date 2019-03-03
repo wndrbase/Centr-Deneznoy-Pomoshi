@@ -559,7 +559,7 @@ a.header__geocity--selected {
 	padding-top: 0px;
 	height: 12px;
 	bottom: 0px;
-	overflow: auto;
+	overflow: hidden;
 	margin-bottom: 45px;
 	position: relative;
 	left: 50%;
@@ -591,11 +591,12 @@ a.header__geocity--selected {
 
 .slide .bx-wrapper .bx-prev,
 .slide .bx-wrapper .bx-next {
-	width: 40px;
-	height: 40px;
-	border-radius: 100px;
-	/*background: rgba(255, 255, 255, .1);*/
-	opacity: 0.7;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(230, 241, 250, 0.1) no-repeat center;
+	background-size: 40% 40%;
+	/*opacity: 0.7;*/
 	-webkit-transition: .25s ease;
 	   -moz-transition: .25s ease;
 	    -ms-transition: .25s ease;
@@ -605,29 +606,23 @@ a.header__geocity--selected {
 
 .slide .bx-wrapper .bx-prev:hover,
 .slide .bx-wrapper .bx-next:hover {
-	/*background-color: rgba(255, 255, 255, .25);*/
-	opacity: 1;
+	background-color: rgba(230, 241, 250, 0.3);
+	/*opacity: 1;*/
 	cursor: pointer;
 }
 
 .slide .bx-wrapper .bx-prev {
-	left: -127px;
+	left: -118px;
 	background-image: url('../img/left.svg');
-	background-position: center center;
-	background-size: 75% 75%;
-	background-repeat: no-repeat;
 }
 
 .slide .bx-wrapper .bx-next {
-	right: -127px;
+	right: -118px;
 	background-image: url('../img/right.svg');
-	background-position: center center;
-	background-size: 75% 75%;
-	background-repeat: no-repeat;
 }
 
 .slide .bx-controls-direction {
-	display: none;
+	display: block;
 }
 
 
@@ -1032,6 +1027,22 @@ a.header__geocity--selected {
 	margin: 0 0 75px;
 }
 
+.news:not(.news--home) .news__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.news:not(.news--home) .news__item {
+	margin: 0 0 20px;
+}
+
+@media only screen and (max-width: 680px) {
+	.news:not(.news--home) .news__list {
+		justify-content: center;
+	}
+}
+
 .news--home {
 	margin: 70px 0 110px;
 }
@@ -1074,6 +1085,38 @@ a.header__geocity--selected {
 	width: 6px;
 	height: 9px;
 	background: url(../img/sprite.svg) -379px -46px no-repeat;
+}
+
+.reviews__all {
+	text-align: center;
+	margin-bottom: 40px;
+	transition: opacity 300ms;
+}
+
+.reviews__all:hover {
+	opacity: .8;
+}
+
+.reviews__all a {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.71;
+	color: #21405B;
+}
+
+.reviews__all a:after {
+	content: '';
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 9px;
+	width: 6px;
+	height: 9px;
+	background: url(../img/sprite.svg?v3) -379px -16px no-repeat;
+}
+
+.reviews__all span {
+	color: #ff4533;
 }
 
 .news__list {
@@ -1430,46 +1473,21 @@ a.header__geocity--selected {
 	margin-top: -13px;
 }
 
-.reviews__arr-prev:hover {
-	background: url(../img/sprite.svg) -425px -38px no-repeat;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
+.reviews__arr-prev {
+	left: -94px;
+	background: url('../img/slick_left.svg?v4') 0 0 no-repeat;
 }
 
-.reviews__arr-prev,
+.reviews__arr-next {
+	right: -94px;
+	background: url('../img/slick_right.svg?v4') 0 0 no-repeat;
+}
+
+.reviews__arr-prev:hover,
 .reviews__arr-prev--disabled,
-.reviews__arr-prev--disabled:hover {
-	left: -64px;
-	background: url(../img/sprite.svg) -479px -38px no-repeat;
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-.reviews__arr-next:hover {
-	background: url(../img/sprite.svg) -425px -38px no-repeat;
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-.reviews__arr-next,
-.reviews__arr-next--disabled,
-.reviews__arr-next--disabled:hover {
-	right: -64px;
-	background: url(../img/sprite.svg) -479px -38px no-repeat;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
+.reviews__arr-next:hover,
+.reviews__arr-next--disabled {
+	opacity: 0.6;
 }
 
 .reviews__arr-prev--disabled,
@@ -1610,6 +1628,7 @@ a.header__geocity--selected {
 .reviews__dot-nav {
 	width: 100%;
 	text-align: center;
+	display: none;
 }
 
 .reviews__dot-nav-item {

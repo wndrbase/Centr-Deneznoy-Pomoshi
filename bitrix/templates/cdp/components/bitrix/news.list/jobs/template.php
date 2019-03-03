@@ -38,7 +38,7 @@ use Bitrix\Main\Localization\Loc;
 						</div>
 					</div>
 					<a href="javascript:;" class="jobs-list__read-full" data-link-text-full="Читать полностью &darr;" data-link-text-short="Свернуть &uarr;">Читать полностью &darr;</a>
-					<a href="javascript:;" class="btn-alert_up btn btn--red jobs-list__response-btn" data-alert-up="jobs"><?=Loc::getMessage("CDP_J_RESPONSE")?></a>
+					<a href="javascript:;" class="btn-alert_up btn jobs-list__response-btn" data-alert-up="jobs"><?=Loc::getMessage("CDP_J_RESPONSE")?></a>
 				</div>
 			</li>
 		<?endforeach;?>

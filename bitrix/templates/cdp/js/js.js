@@ -229,7 +229,7 @@ var showAlertUp;
 
 			if(nReviewsGroups > 1) {
 
-				for(i = 0; i < nReviewsGroups; i++)
+				for(var i = 0; i < nReviewsGroups; i++)
 					oDotsNav.append('<a href="javascript:;" class="reviews__dot-nav-item"></a>');
 
 				oDotsNav.children('a:eq(0)').addClass('reviews__dot-nav-item--active');
@@ -273,6 +273,68 @@ var showAlertUp;
 		}
 
 	}
+
+    (function (d) {
+        var
+            ce = function (e, n) {
+                var a = document.createEvent("CustomEvent");
+                a.initCustomEvent(n, true, true, e.target);
+                e.target.dispatchEvent(a);
+                a = null;
+                return false
+            },
+            nm = true,
+            sp = {
+                x: 0,
+                y: 0
+            },
+            ep = {
+                x: 0,
+                y: 0
+            },
+            touch = {
+                touchstart: function (e) {
+                    sp = {
+                        x: e.touches[0].pageX,
+                        y: e.touches[0].pageY
+                    }
+                },
+                touchmove: function (e) {
+                    nm = false;
+                    ep = {
+                        x: e.touches[0].pageX,
+                        y: e.touches[0].pageY
+                    }
+                },
+                touchend: function (e) {
+                    if (nm) {
+                        ce(e, 'fc')
+                    } else {
+                        var x = ep.x - sp.x,
+                            xr = Math.abs(x),
+                            y = ep.y - sp.y,
+                            yr = Math.abs(y);
+                        if (Math.max(xr, yr) > 20) {
+                            ce(e, (xr > yr ? (x < 0 ? 'swl' : 'swr') : (y < 0 ? 'swu' : 'swd')))
+                        }
+                    }
+                    ;
+                    nm = true
+                },
+                touchcancel: function (e) {
+                    nm = false
+                }
+            };
+        for (var a in touch) {
+            d.addEventListener(a, touch[a], false);
+        }
+    })(document);
+
+    $(".reviews--home").on('swl', function () {
+        $('.reviews__arr-next').trigger('click');
+    }).on('swr', function () {
+        $('.reviews__arr-prev').trigger('click');
+    });
 
 // select
 	$('select').css('width','100%').each(function () {

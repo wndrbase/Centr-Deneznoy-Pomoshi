@@ -129,7 +129,7 @@
 					<?endif;?>
 					<div class="input-line input-line--submit">
 						<input type="hidden" name="AJAX_ORDER_CALLBACK" value="Y">
-						<label class="btn btn--red"><?=Loc::getMessage("F_AU_FORM_CALLBACK_SUBMIT")?><input type="submit"></label>
+						<label class="btn"><?=Loc::getMessage("F_AU_FORM_CALLBACK_SUBMIT")?><input type="submit"></label>
 					</div>
 					<a class="alert_up__close ico ico--close"></a>
 				</form>
@@ -167,7 +167,7 @@
 						<input type="hidden" name="USER_JOB_CITY" value="">
 						<input type="hidden" name="USER_RESUME_FILE" value="">
 						<input type="hidden" name="AJAX_JOB" value="Y">
-						<label class="btn btn--red"><?=Loc::getMessage("F_AU_FORM_JOB_SUBMIT")?><input type="submit"></label>
+						<label class="btn"><?=Loc::getMessage("F_AU_FORM_JOB_SUBMIT")?><input type="submit"></label>
 					</div>
 					<a class="alert_up__close ico ico--close"></a>
 				</form>

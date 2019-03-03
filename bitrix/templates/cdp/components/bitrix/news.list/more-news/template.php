@@ -57,7 +57,7 @@ use Bitrix\Main\Localization\Loc;
 					</li>
 				<?endforeach;?>
 			</ul>
-			<a href="<?=$arResult["ITEMS"][0]["LIST_PAGE_URL"]?>" class="btn btn--red news__btn-more news__btn-more--all"><?=Loc::getMessage("CDP_N_ALL")?></a>
+			<a href="<?=$arResult["ITEMS"][0]["LIST_PAGE_URL"]?>" class="btn news__btn-more news__btn-more--all"><?=Loc::getMessage("CDP_N_ALL")?></a>
 		</div>
 
 	</div>

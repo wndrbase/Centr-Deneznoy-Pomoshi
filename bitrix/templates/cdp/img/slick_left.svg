@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="26px" viewBox="0 0 14 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main_page-copy" transform="translate(-116.000000, -369.000000)" fill="#1682DA">
+            <path d="M128.424437,394.731034 C128.604502,394.910345 128.829582,395 129.07717,395 C129.324759,395 129.549839,394.910345 129.729904,394.731034 C130.090032,394.372414 130.090032,393.789655 129.729904,393.431034 L118.250804,382 L129.729904,370.568966 C130.090032,370.210345 130.090032,369.627586 129.729904,369.268966 C129.369775,368.910345 128.784566,368.910345 128.424437,369.268966 L116.270096,381.35 C115.909968,381.708621 115.909968,382.291379 116.270096,382.65 L128.424437,394.731034 L128.424437,394.731034 Z" id="left"></path>
+        </g>
+    </g>
+</svg>

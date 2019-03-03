@@ -21,7 +21,17 @@ use Bitrix\Main\Localization\Loc;
 		<div class="reviews reviews--home">
 			<div class="overtitle"><?=Loc::getMessage("CDP_R_ABOUT_SAYS")?></div>
 			<div class="h1"><?=Loc::getMessage("CDP_R_TITLE")?></div>
-			<div class="news__all"><a href="/reviews/">Все отзывы</a></div>
+            <? if ($arResult['TOTAL'] > 0): ?>
+                <div class="reviews__all">
+                    <a href="/reviews/">
+                        Всего
+                       <span><?= $arResult['TOTAL']; ?></span>
+                        <?= AB::declOfNum($arResult['TOTAL'], ['отзыв', 'отзыва','отзывов']); ?>
+                    </a>
+                </div>
+            <? else: ?>
+                <div class="news__all"><a href="/reviews/">Все отзывы</a></div>
+            <? endif; ?>
 			<div class="reviews__list">
 				<?foreach($arResult["ITEMS"] as $arItem):?>
 					<?

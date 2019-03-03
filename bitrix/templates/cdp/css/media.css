@@ -58,11 +58,18 @@
 	.slide .bx-wrapper .bx-next {
 		right: -127px;
 	}
+}
 
-	.slide .bx-controls-direction {
-		display: block;
+/* 1400
+----------------------------------------*/
+@media only screen and (max-width: 1400px) {
+	.slide .bx-controls-direction .bx-prev {
+		left: 10px;
 	}
 
+	.slide .bx-controls-direction .bx-next {
+		right: 10px;
+	}
 }
 
 /* 1300
@@ -79,6 +86,14 @@
 /* 1160
 ----------------------------------------*/
 @media only screen and (max-width: 1160px) {
+
+	.slide .bx-controls-direction .bx-prev {
+		left: -30px;
+	}
+
+	.slide .bx-controls-direction .bx-next {
+		right: -30px;
+	}
 
 	.frontend .center {
 		max-width: 940px;
@@ -212,11 +227,18 @@
 		font-size: 40px;
 	}
 
+	.reviews__dot-nav {
+		display: block;
+	}
 }
 
 /* 960
 ----------------------------------------*/
 @media only screen and (max-width: 960px) {
+
+	.slide .bx-controls-direction {
+		display: none;
+	}
 
 	.hidden-sm {
 		display: none !important;
@@ -237,9 +259,6 @@
 		margin-bottom: 40px;
 	}
 
-	.home .header {
-		height: 495px;
-	}
 
 	.header.header--background {
 	    height: 329px;
@@ -483,6 +502,10 @@
 
 	.slide__more-btn:after {
 	    right: 26px;
+	}
+
+	.slide .bx-controls {
+		bottom: -10px;
 	}
 
 	.calculator {
@@ -863,6 +886,10 @@
 /* 768
 ----------------------------------------*/
 @media only screen and (max-width: 720px) {
+
+	.news--home .slick-dots {
+		position: relative;
+	}
 
 	.hidden-xs {
 		display: none !important;
@@ -1408,4 +1435,17 @@
 		width: 200px;
 	}
 
+	.home .header {
+		height: 560px;
+	}
+
+	.slide {
+		width: 100%;
+		height: 365px;
+		top: 0px;
+	}
+
+	.slide__anounce {
+		padding: 0 10px;
+	}
 }
