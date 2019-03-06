@@ -244,29 +244,19 @@ $APPLICATION->SetTitle("Контакты");
 
 		<div class="contacts__form-box">
 
-			<div class="input-line input-line--left"><input type="text" name="USER_NAME" class="input" placeholder="Имя, фамилия"></div>
+			<div class="input-line">
+                <input type="text" name="USER_NAME" class="input" placeholder="Имя">
+            </div>
 
-			<div class="input-line input-line--right"><input type="tel" name="USER_PHONE" class="input mask-tel" placeholder="Контактный телефон"></div>
-
-			<div class="input-line input-line--left"><input type="text" name="USER_EMAIL" class="input" placeholder="Почта"></div>
+			<div class="input-line input-line--left">
+                <input type="tel" name="USER_PHONE" class="input mask-tel" placeholder="Контактный телефон">
+            </div>
 
 			<div class="input-line input-line--right">
-				<select name="USER_SUBJECT">
-					<option value="none">Выберите тему</option>
-					<?
-					$arFormSubjects = AB_S1::getFeedbackFormSubjects();
-					foreach($arFormSubjects as $fid => $fs)
-						echo '<option value="'.$fid.'">'.$fs.'</option>';
-					?>
-				</select>
-			</div>
-
-			<?/*<div class="input-line">
-				<input type="text"  name="USER_CITY" class="input" placeholder="Ваш город">
-			</div>*/?>
+                <input type="text" name="USER_EMAIL" class="input" placeholder="Почта">
+            </div>
 
 			<div class="input-line">
-
 				<select name="USER_CITY">
 					<option value="none">Ваш город</option>
 					<?if($AR_CITIES):?>
@@ -275,24 +265,20 @@ $APPLICATION->SetTitle("Контакты");
 						<?endforeach;?>
 					<?endif;?>
 				</select>
-
 			</div>
 
 			<div class="input-line">
 				<textarea name="USER_MESSAGE" class="input" placeholder="Ваше сообщение"></textarea>
 			</div>
 
-			<div class="input-line input-line--dropfile" id="dropZone">
-				<span data-text='Перетащите файлы (до 3 штук) или <span class="link-file-btn">выберите файл</span>'>Перетащите файлы (до 3 штук) или <span class="link-file-btn">выберите файл</span></span>
-				<div class="input-line__dropfile-pg-container">
-					<div class="input-line__dropfile-pg-text">Загрузка...</div>
-					<div class="input-line__dropfile-pg-load"><span></span></div>
-				</div>
-            	<input type="file" name="USER_FILES[]" class="input-line__input-file" id="dropZoneUserFiles" multiple>
-            </div>
-
 			<div class="input-line">
-				<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1">Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a></label>
+				<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1">
+                    Я согласен(а) на обработку персональных данных и ознакомлен(а)
+                    с
+                    <a href="/upload/docs/privacy-policy.pdf" target="_blank">Политикой конфиденциальности</a>
+                    и
+                    <a href="/upload/docs/position.pdf" target="_blank">Положением о порядке рассмотрения обращений, требования и рекомендации к содержанию обращений</a>
+                </label>
 			</div>
 
 			<?if(USE_GOOGLE_CAPTCHA_V2):?>
