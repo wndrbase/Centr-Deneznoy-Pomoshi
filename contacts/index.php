@@ -289,7 +289,7 @@ $APPLICATION->SetTitle("Контакты");
 
 			<div class="input-line input-line--submit">
 				<input type="hidden" name="AJAX_CONTACTS_FEEDBACK" value="Y">
-				<label class="btn btn--red contacts__form-btn">Отправить<input type="submit"></label>
+				<label class="btn contacts__form-btn">Отправить<input type="submit"></label>
 			</div>
 		</div>
 
