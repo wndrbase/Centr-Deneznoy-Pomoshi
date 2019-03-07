@@ -1033,13 +1033,38 @@ a.header__geocity--selected {
 	justify-content: space-between;
 }
 
+.news:not(.news--home) .news__list::after {
+	content: "";
+	flex: auto;
+}
+
 .news:not(.news--home) .news__item {
 	margin: 0 0 20px;
+	margin-right: calc((100% - 1000px) / 3);
+}
+
+.news:not(.news--home) .news__item:nth-child(4n) {
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 960px) {
+	.news:not(.news--home) .news__item {
+		margin: 0 0 20px;
+		margin-right: calc(100% - 618px);
+	}
+
+	.news:not(.news--home) .news__item:nth-child(2n) {
+		margin-right: 0;
+	}
 }
 
 @media only screen and (max-width: 680px) {
 	.news:not(.news--home) .news__list {
 		justify-content: center;
+	}
+
+	.news:not(.news--home) .news__item {
+		margin: 0 0 20px;
 	}
 }
 

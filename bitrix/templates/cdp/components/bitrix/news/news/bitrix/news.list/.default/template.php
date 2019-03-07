@@ -17,7 +17,7 @@ use Bitrix\Main\Localization\Loc;
 
 <?if($arResult["ITEMS"]):?>
 	<div class="news">
-		<ul class="news__list clr">
+		<ul class="news__list">
 			<!--RestartBuffer-->
 			<?foreach($arResult["ITEMS"] as $arItem):?>
 				<?
