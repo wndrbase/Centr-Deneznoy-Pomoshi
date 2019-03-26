@@ -4,6 +4,31 @@ $APPLICATION->SetTitle("Вакансии");
 ?>
 <div class="center clr">
 
+    <div class="h1">Работа в Центре Денежной Помощи</div>
+
+    <ul class="blue-icons-list">
+        <li class="blue-icons-list__item">
+            <div class="blue-icons-list__ico blue-icons-list__ico--clients"></div>
+            <div class="blue-icons-list__title">Доверие клиентов</div>
+            <?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
+        </li>
+        <li class="blue-icons-list__item">
+            <div class="blue-icons-list__ico blue-icons-list__ico--wallet"></div>
+            <div class="blue-icons-list__title">Достойная заработная плата</div>
+            <?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
+        </li>
+        <li class="blue-icons-list__item">
+            <div class="blue-icons-list__ico blue-icons-list__ico--bag"></div>
+            <div class="blue-icons-list__title">Успешная карьера</div>
+            <?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
+        </li>
+        <li class="blue-icons-list__item">
+            <div class="blue-icons-list__ico blue-icons-list__ico--checklist"></div>
+            <div class="blue-icons-list__title">Профессионализм</div>
+            <?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
+        </li>
+    </ul>
+
 	<?$APPLICATION->IncludeComponent(
 		"bitrix:news.list",
 		"jobs",
@@ -60,36 +85,19 @@ $APPLICATION->SetTitle("Вакансии");
 			"SORT_ORDER2" => "DESC"
 		)
 	);?>
-
-	<div class="h1">Работа в Центре Денежной Помощи</div>
-
-	<ul class="blue-icons-list">
-		<li class="blue-icons-list__item">
-			<div class="blue-icons-list__ico blue-icons-list__ico--clients"></div>
-			<div class="blue-icons-list__title">Доверие клиентов</div>
-			<?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
-		</li>
-		<li class="blue-icons-list__item">
-			<div class="blue-icons-list__ico blue-icons-list__ico--wallet"></div>
-			<div class="blue-icons-list__title">Достойная заработная плата</div>
-			<?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
-		</li>
-		<li class="blue-icons-list__item">
-			<div class="blue-icons-list__ico blue-icons-list__ico--bag"></div>
-			<div class="blue-icons-list__title">Успешная карьера</div>
-			<?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
-		</li>
-		<li class="blue-icons-list__item">
-			<div class="blue-icons-list__ico blue-icons-list__ico--checklist"></div>
-			<div class="blue-icons-list__title">Профессионализм</div>
-			<?/*<div class="blue-icons-list__text">Пожалуйста, обращайтесь в ближайший офис или головной офис в Северодвинске.</div>*/?>
-		</li>
-	</ul>
-
-	<div class="block-hh">
-		<a href="//severodvinsk.hh.ru/employer/2507675" rel="nofollow" target="_blank"><span>ХОЧЕШЬ РАБОТАТЬ У НАС?</span> <img src="/upload/images/HH.png" alt="Вакансии на HH.ru" title="Вакансии на HH.ru"></a>
-	</div>
-
-
 </div>
+
+    <aside class="promo-block flexbox flexbox--align-center">
+        <div class="center">
+            <div class="h1">Хочешь работать у нас?</div>
+            <p>Ознакомься с полным списком вакансий, а также оставить свое резюме Вы можете на сайте headhunter.ru</p>
+
+            <p>
+                <a href="//severodvinsk.hh.ru/employer/2507675" class="link" rel="nofollow" target="_blank">
+                    <img src="/upload/images/HH.png" height="50" width="250" alt="Вакансии на hh.ru" title="Вакансии на hh.ru">
+                </a>
+            </p>
+        </div>
+    </aside>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -17,6 +17,9 @@
 	global $B_ABOUT_PAGE;
 	$B_ABOUT_PAGE = $APPLICATION->GetCurDir() == "/about/" ? true : false;
 
+    global $B_JOBS_PAGE;
+    $B_JOBS_PAGE = \CSite::InDir('/jobs/');
+
 	global $B_404_PAGE;
 	$B_404_PAGE = http_response_code() == 404 ? true : false;
 
@@ -315,7 +318,7 @@
 
 		</header><!-- /header -->
 
-		<main class="main<?if(strlen($sBackgroundImage)>0):?> main--pad<?endif;?><?if($B_ABOUT_PAGE):?> main--no-pad-bottom<?endif;?>">
+		<main class="main<?if(strlen($sBackgroundImage)>0):?> main--pad<?endif;?><?if($B_ABOUT_PAGE || $B_JOBS_PAGE):?> main--no-pad-bottom<?endif;?>">
 
 			<?if(strlen($sBackgroundImage) == 0 && !$B_INDEX_PAGE && $sWrapperClass != 'page-contacts'):?>
 			<div class="center clr">

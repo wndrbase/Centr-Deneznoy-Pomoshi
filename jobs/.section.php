@@ -1,8 +1,8 @@
 <?
 $sSectionName = "Вакансии";
-$arDirProperties = Array(
+$arDirProperties = array(
    "WRAPPER_CLASS" => "page-jobs",
-   "BACKGROUND_IMAGE" => "/upload/medialibrary/8f6/8f62063800cf57cd45cc4195fe96d69a.png",
+   "BACKGROUND_IMAGE" => "/upload/medialibrary/c28/site_job_1140x490_New.png",
    "PROMO_BLOCK" => "N"
 );
 ?>
