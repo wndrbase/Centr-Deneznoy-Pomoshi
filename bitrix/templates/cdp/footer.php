@@ -206,7 +206,12 @@
 					</div>
 					<?endif;?>
 					<div class="input-line input-line--submit">
-						<label class="btn btn--red"><?=Loc::getMessage("F_AU_FORM_LOAN_SUBMIT")?><input type="submit"></label>
+						<label class="btn btn--red">
+                            <input type="submit">
+                            <span class="btn__container">
+                                <span class="btn__tick"><?=Loc::getMessage("F_AU_FORM_LOAN_SUBMIT")?></span>
+                            </span>
+                        </label>
 					</div>
 					<a class="alert_up__close ico ico--close"></a>
 				</form>

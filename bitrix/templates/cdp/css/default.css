@@ -183,6 +183,7 @@ textarea.input {
 
 .input-line--submit {
 	margin-top: 46px;
+	height: 70px;
 	display: block;
 }
 
@@ -395,6 +396,21 @@ body.hidden .alert_up .select2-dropdown {
 
 a.btn {
 	color: #fff;
+}
+
+.btn--circle {
+	padding: 0;
+	width: 70px !important;
+	height: 70px !important;
+	border-radius: 50%;
+	transform: rotate(-180deg);
+	line-height: 80px;
+	background: #58bd4d !important;
+}
+
+.btn svg {
+	transform: rotate(180deg);
+	transition: all .5s;
 }
 
 .btn--220 {

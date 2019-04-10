@@ -616,7 +616,7 @@ jQuery(document).ready(function($) {
 				calcForm.find('input[name="LOAN_VIEW_UID"]').val(selectedLoanView.attr('data-loan-view-uid'));
 				calcForm.find('input[name="LOAN_STOCK_UID"]').val(selectedLoanView.attr('data-stock-uid'));
 
-				calcFormData = calcForm.serialize();
+				var calcFormData = calcForm.serialize();
 
 				calcFormData += "&sessid=" + BX.bitrix_sessid();
 
@@ -641,7 +641,20 @@ jQuery(document).ready(function($) {
 					 	if(data.SUCCESS) {
 							thisForm.find('input[type="text"], input[type="tel"], input[type="email"]').removeClass('input--actived').val("");
 							var oMsgSuccess = $('<div class="msg msg--success"><div>'+data.MESSAGE+'</div></div>').prependTo(thisForm);
+
+                            var button = thisForm.find('.btn'),
+                                buttonText = button.find('.btn__tick');
+
+                            if (!buttonText.data('text'))
+                                buttonText.data('text', buttonText.text());
+
+
+                            buttonText.html('<svg width="29" height="23" viewBox="0 0 58 45" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fill-rule="nonzero" d="M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65"/></svg>');
+                            button.addClass('btn--circle');
+
 							setTimeout(function(){
+                                buttonText.html(buttonText.data('text'));
+                                button.removeClass('btn--circle');
 								oMsgSuccess.remove();
 							}, 5000);
 						} else {

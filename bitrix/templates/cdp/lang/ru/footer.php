@@ -31,7 +31,7 @@ $MESS['F_AU_FORM_LOAN_PH_BIRTHDAY'] = "Дата рождения";
 $MESS['F_AU_FORM_LOAN_PH_PHONE'] = "Телефон";
 $MESS['F_AU_FORM_LOAN_PH_EMAIL'] = "Электронная почта";
 $MESS['F_AU_FORM_LOAN_FZ'] = 'Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a>';
-$MESS['F_AU_FORM_LOAN_SUBMIT'] = "Оставить заявку";
+$MESS['F_AU_FORM_LOAN_SUBMIT'] = "Узнать решение";
 
 $MESS['F_AU_FORM_CALC_GEO_TITLE'] = "Выбор офиса";
 $MESS['F_AU_FORM_CALC_GEO_REGION'] = "Выбрать область";

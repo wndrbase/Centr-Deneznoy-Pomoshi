@@ -72,7 +72,7 @@ a.header__geocity:before {
     left: 14px;
     width: 13px;
     height: 18px;
-    background: url(../img/sprite.svg) -40px -40px no-repeat;
+    background: url(../img/sprite.svg?1) -40px -40px no-repeat;
 }
 
 a.header__geocity:after {
@@ -83,7 +83,7 @@ a.header__geocity:after {
     right: 14px;
     width: 10px;
     height: 6px;
-    background: url(/bitrix/templates/cdp/css/../img/sprite.svg) -93px -48px no-repeat;
+    background: url(/bitrix/templates/cdp/css/../img/sprite.svg?1) -93px -48px no-repeat;
 }
 
 a.header__geocity--selected {
@@ -127,7 +127,7 @@ a.header__geocity--selected {
     left: 14px;
     width: 13px;
     height: 18px;
-    background: url(../img/sprite.svg) -40px -40px no-repeat;
+    background: url(../img/sprite.svg?1) -40px -40px no-repeat;
 }
 
 .header__geocity .select2-container--default .select2-selection--single .select2-selection__placeholder {
@@ -151,7 +151,7 @@ a.header__geocity--selected {
 	margin-top: -3px;
 	position: absolute;
 	top: 50%;
-	background: url(../img/sprite.svg) -93px -48px no-repeat;
+	background: url(../img/sprite.svg?1) -93px -48px no-repeat;
 }
 
 .header__geocity .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
@@ -168,7 +168,7 @@ a.header__geocity--selected {
 	margin: 0 auto;
 	width: 399px;
 	height: 52px;
-	background: url(../img/sprite.svg) -34px -279px no-repeat;
+	background: url(../img/sprite.svg?1) -34px -279px no-repeat;
 }
 
 .header__phone {
@@ -242,7 +242,7 @@ a.header__geocity--selected {
 	content: '';
 	width: 4px;
 	height: 4px;
-	background: url(../img/sprite.svg) -143px -49px no-repeat;
+	background: url(../img/sprite.svg?1) -143px -49px no-repeat;
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -553,7 +553,7 @@ a.header__geocity--selected {
 	width: 59px;
 	height: 59px;
 	position: relative;
-	background: url(../img/sprite.svg) -22px -96px no-repeat;
+	background: url(../img/sprite.svg?1) -22px -96px no-repeat;
 }
 
 .callback-order__text {
@@ -811,7 +811,7 @@ a.header__geocity--selected {
 	position: absolute;
 	top: 50%;
 	right: 30px;
-	background: url(../img/sprite.svg) -187px -46px no-repeat;
+	background: url(../img/sprite.svg?1) -187px -46px no-repeat;
 	width: 6px;
     height: 9px;
     margin-top: -4px;
@@ -877,7 +877,7 @@ a.header__geocity--selected {
     position: absolute;
     top: 50%;
     right: 30px;
-    background: url(../img/sprite.svg) -187px -46px no-repeat;
+    background: url(../img/sprite.svg?1) -187px -46px no-repeat;
     width: 6px;
     height: 9px;
     margin-top: -4px;
@@ -1114,7 +1114,7 @@ a.header__geocity--selected {
 	width: 75px;
 	height: 75px;
 	position: relative;
-	background-image: url(../img/sprite.svg);
+	background-image: url(../img/sprite.svg?1);
 	background-repeat: no-repeat;
 	background-position:  -78px -87px;
 }
@@ -1236,7 +1236,7 @@ a.header__geocity--selected {
 	left: 9px;
 	width: 6px;
 	height: 9px;
-	background: url(../img/sprite.svg) -379px -46px no-repeat;
+	background: url(../img/sprite.svg?1) -379px -46px no-repeat;
 }
 
 .reviews__all {
@@ -1410,7 +1410,7 @@ a.header__geocity--selected {
 	position: absolute;
 	top: 50%;
 	left: 24px;
-	background: url(../img/sprite.svg) -833px -46px no-repeat;
+	background: url(../img/sprite.svg?1) -833px -46px no-repeat;
 	width: 9px;
     height: 9px;
     margin-top: -5px;
@@ -1518,7 +1518,7 @@ a.header__geocity--selected {
 .shared-block__item--facebook a:before {
 	width: 7px;
 	height: 15px;
-	background: url(../img/sprite.svg) -300px -198px no-repeat;
+	background: url(../img/sprite.svg?1) -300px -198px no-repeat;
 	top: 2px;
 	margin-right: 10px;
 }
@@ -1526,14 +1526,14 @@ a.header__geocity--selected {
 .shared-block__item--vkontakte a:before {
 	width: 17px;
 	height: 10px;
-	background: url(../img/sprite.svg) -347px -201px no-repeat;
+	background: url(../img/sprite.svg?1) -347px -201px no-repeat;
 	margin-right: 9px;
 }
 
 .shared-block__item--odnoklassniki a:before {
 	width: 10px;
 	height: 17px;
-	background: url(../img/sprite.svg) -404px -197px no-repeat;
+	background: url(../img/sprite.svg?1) -404px -197px no-repeat;
 	top: 3px;
 }
 
@@ -1582,7 +1582,7 @@ a.header__geocity--selected {
 	position: absolute;
 	top: 50%;
 	right: 30px;
-	background: url(../img/sprite.svg) -187px -46px no-repeat;
+	background: url(../img/sprite.svg?1) -187px -46px no-repeat;
 	width: 6px;
     height: 9px;
     margin-top: -4px;
@@ -1823,7 +1823,7 @@ a.header__geocity--selected {
 	position: absolute;
 	top: 50%;
 	left: 24px;
-	background: url(../img/sprite.svg) -833px -46px no-repeat;
+	background: url(../img/sprite.svg?1) -833px -46px no-repeat;
 	width: 9px;
     height: 9px;
     margin-top: -5px;
@@ -2148,7 +2148,7 @@ a.attach-files-item__download {
     position: absolute;
     top: 50%;
     right: 18px;
-    background: url(../img/sprite.svg) -187px -46px no-repeat;
+    background: url(../img/sprite.svg?1) -187px -46px no-repeat;
     width: 6px;
     height: 9px;
     margin-top: -4px;
@@ -2406,7 +2406,7 @@ a.attach-files-item__download {
 	left: 0px;
 	width: 76px;
 	height: 76px;
-	background-image: url(../img/sprite.svg);
+	background-image: url(../img/sprite.svg?1);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }
@@ -2583,7 +2583,7 @@ a.attach-files-item__download {
 	position: relative;
 	top: 4px;
 	left: 0px;
-	background: url(../img/sprite.svg) -782px -42px no-repeat;
+	background: url(../img/sprite.svg?1) -782px -42px no-repeat;
 }
 
 .jobs-list__response-btn {
@@ -2601,7 +2601,7 @@ a.attach-files-item__download {
     position: absolute;
     top: 50%;
     right: 18px;
-    background: url(../img/sprite.svg) -187px -46px no-repeat;
+    background: url(../img/sprite.svg?1) -187px -46px no-repeat;
     width: 6px;
     height: 9px;
     margin-top: -5px;
@@ -2882,7 +2882,7 @@ a.organizations__show-requisites:after {
 	position: relative;
 	top: -1px;
 	right: -10px;
-    background: url(../img/sprite.svg) -682px -49px no-repeat;
+    background: url(../img/sprite.svg?1) -682px -49px no-repeat;
 }
 
 .organizations__item--active a.organizations__show-requisites:after {
@@ -3047,7 +3047,7 @@ a.organizations__show-requisites:after {
     margin-top: -3px;
     position: absolute;
     top: 50%;
-    background: url(../img/sprite.svg) -329px -48px no-repeat;
+    background: url(../img/sprite.svg?1) -329px -48px no-repeat;
 	-webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -3108,7 +3108,7 @@ a.organizations__show-requisites:after {
     margin-top: -3px;
     position: absolute;
     top: 50%;
-    background: url(../img/sprite.svg) -329px -48px no-repeat;
+    background: url(../img/sprite.svg?1) -329px -48px no-repeat;
 }
 
 .org__offices-item--active a:before {
@@ -3229,7 +3229,7 @@ a.organizations__show-requisites:after {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: url(../img/sprite.svg) -10px -10px no-repeat;
+	background: url(../img/sprite.svg?1) -10px -10px no-repeat;
 	-webkit-transition: opacity .25s linear;
 	   -moz-transition: opacity .25s linear;
 	    -ms-transition: opacity .25s linear;
@@ -3337,7 +3337,7 @@ a.organizations__show-requisites:after {
 	display: inline-block;
 	width:  18px;
 	height: 16px;
-	background: url(../img/sprite.svg) -415px -390px no-repeat;
+	background: url(../img/sprite.svg?1) -415px -390px no-repeat;
 	position: relative;
 	top: 3px;
 	margin-right: 6px;
