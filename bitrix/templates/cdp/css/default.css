@@ -185,6 +185,8 @@ textarea.input {
 	margin-top: 46px;
 	height: 70px;
 	display: block;
+	position: relative;
+	z-index: 101;
 }
 
 .input-line--error:after {
