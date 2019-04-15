@@ -129,12 +129,12 @@ $APPLICATION->SetTitle("Центр денежной помощи");
 					</div>
 				</div>
 
-				<div class="calculator__right">
+				<div class="calculator__right btn--rotate-container">
 					<div class="calculator__total hidden-sm">
 						<div class="calculator__total-text">Сумма к возврату:</div>
 						<div class="calculator__total-sum"><span>8 570</span> <b>₽</b></div>
 					</div>
-					<label class="btn btn--red calculator__btn">Получить решение по займу</label>
+					<label class="btn btn--red btn--rotate calculator__btn">Получить решение по займу</label>
 				</div>
 
 			</div>
