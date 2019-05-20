@@ -104,7 +104,7 @@ $docs_archive = function($matches) use ($arResult) {
 
 			global $arrDocsArchiveFilter;
 
-			$arrDocsArchiveFilter = Array("ACTIVE_DATE" => "", "<DATE_ACTIVE_TO" => ConvertTimeStamp());
+			$arrDocsArchiveFilter = array("ACTIVE_DATE" => "", "<DATE_ACTIVE_TO" => ConvertTimeStamp(false, "FULL"));
 
 			$APPLICATION->IncludeComponent(
 				"bitrix:news.list",
