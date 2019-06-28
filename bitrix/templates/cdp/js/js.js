@@ -35,7 +35,8 @@ var showAlertUp;
 			auto: true,
 			adaptiveHeight: true,
 			//autoDelay: 10000
-			pause: 7000
+			pause: 7000,
+			touchEnabled: BX.browser.IsMobile()
 		};
 
 // slider
