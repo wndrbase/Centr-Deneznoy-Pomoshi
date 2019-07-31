@@ -221,7 +221,7 @@
 									<?if(!$B_INDEX_PAGE):?>
 										<a href="/#calculator" class="btn header__apply-btn btn--red"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
 									<?else:?>
-										<a href="javascript:;" class="btn header__apply-btn btn--red header__apply-btn--calculator"><?=Loc::getMessage("Google Analytics")?></a>
+										<a href="javascript:;" class="btn header__apply-btn btn--red header__apply-btn--calculator"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
 									<?endif;?>
 
 								</div>

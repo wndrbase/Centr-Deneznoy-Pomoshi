@@ -29,19 +29,19 @@
 
 				<div class="footer__social clr">
 					<ul class="footer__social-list">
-						<li class="footer__social-item footer__social-item--vk"><a href="https://vk.com/money4help" target="_blank"></a></li>
-						<li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/money4help/" target="_blank"></a></li>
-						<li class="footer__social-item footer__social-item--ok"><a href="https://ok.ru/group/53690351026353" target="_blank"></a></li>
-						<li class="footer__social-item footer__social-item--ig"><a href="https://www.instagram.com/money_cdp/" target="_blank"></a></li>
-						<li class="footer__social-item footer__social-item--tw"><a href="https://twitter.com/money4help" target="_blank"></a></li>
-						<li class="footer__social-item footer__social-item--yt"><a href="https://www.youtube.com/channel/UClvFVCqte2KP_TXdLHNFn4g" target="_blank"></a></li>
+						<li class="footer__social-item footer__social-item--vk"><a href="https://vk.com/money4help" target="_blank" rel="nofollow"></a></li>
+						<li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/money4help/" target="_blank" rel="nofollow"></a></li>
+						<li class="footer__social-item footer__social-item--ok"><a href="https://ok.ru/group/53690351026353" target="_blank" rel="nofollow"></a></li>
+						<li class="footer__social-item footer__social-item--ig"><a href="https://www.instagram.com/money_cdp/" target="_blank" rel="nofollow"></a></li>
+						<li class="footer__social-item footer__social-item--tw"><a href="https://twitter.com/money4help" target="_blank" rel="nofollow"></a></li>
+						<li class="footer__social-item footer__social-item--yt"><a href="https://www.youtube.com/channel/UClvFVCqte2KP_TXdLHNFn4g" target="_blank" rel="nofollow"></a></li>
 					</ul>
 				</div>
 
 				<?$APPLICATION->IncludeComponent(
 					"bitrix:menu",
 					"footer",
-					Array(
+					array(
 						"ALLOW_MULTI_SELECT" => "N",
 						"CHILD_MENU_TYPE" => "footer",
 						"DELAY" => "N",
@@ -63,7 +63,7 @@
 				</div>
 
                 <div class="footer__wonderbase">
-				Разработка сайта &mdash; <a href="//wndrbase.com" target="_blank">Wondrbase</a>
+				Разработка сайта &mdash; <a href="//wndrbase.com" target="_blank" rel="nofollow">Wondrbase</a>
                 </div>
 
 				<div class="footer__full-version">
