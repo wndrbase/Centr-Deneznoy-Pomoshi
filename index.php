@@ -5,9 +5,8 @@ $APPLICATION->SetPageProperty("description", "Получить заем легк
 $APPLICATION->SetTitle("Центр денежной помощи");
 ?><div class="center clr">
 
-	<div class="calculator">
-		<a name="calculator"></a>
-		<form action="" method="get" class="calculator__form" id="form-calculator">
+	<div id="calculator" class="calculator">
+		<form id="form-calculator" action="/" method="get" class="calculator__form">
 
 			<input class="calculator__data-values hide" type="radio" checked="checked"
 				data-sum-step="100"

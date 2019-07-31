@@ -14,6 +14,8 @@ use Bitrix\Main\EventManager;
 EventManager::getInstance()->addEventHandler("main", "OnBeforeUserUpdate", Array("AB", "OnBeforeUserUpdateHandler"));
 EventManager::getInstance()->addEventHandler("iblock", "OnStartIBlockElementUpdate", Array("AB", "OnStartIBlockElementUpdateHandler"));*/
 
+EventManager::getInstance()->addEventHandler("main", "OnEndBufferContent", ["AB", "deleteTypeForScripts"]);
+
 class AB
 {
     /**
@@ -27,6 +29,14 @@ class AB
     {
         $cases = [2, 0, 1, 1, 1, 2];
         return $titles[($number % 100 > 4 && $number % 100 < 20) ? 2 : $cases[min($number % 10, 5)]];
+    }
+
+    static function deleteTypeForScripts(&$content)
+    {
+        global $USER, $APPLICATION;
+        if ((is_object($USER) && $USER->IsAuthorized()) || strpos($APPLICATION->GetCurDir(), '/bitrix/') !== false) return;
+
+        $content = str_replace('<script type="text/javascript"', '<script', $content);
     }
 }
 

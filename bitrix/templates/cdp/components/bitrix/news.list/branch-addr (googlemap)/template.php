@@ -49,7 +49,7 @@ $sWrapperClass = $arParams['WRAPPER_CLASS'] ? " " . $arParams['WRAPPER_CLASS'] :
 
 		<div class="offices__map">
 			<div id="map"></div>
-			<script type="text/javascript">
+			<script>
 				function initMap() {
 
 					<?foreach($arResult["ITEMS"] as $key => $arItem):?>

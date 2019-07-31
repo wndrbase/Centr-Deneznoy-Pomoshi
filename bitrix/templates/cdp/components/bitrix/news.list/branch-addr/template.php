@@ -51,7 +51,7 @@ $sWrapperClass = $arParams['WRAPPER_CLASS'] ? " " . $arParams['WRAPPER_CLASS'] :
 
 			<div id="map"></div>
 
-			<script type="text/javascript">
+			<script>
 				var myMap,
 					myCollection,
 					PLACEMARKS = [];
@@ -80,7 +80,7 @@ $sWrapperClass = $arParams['WRAPPER_CLASS'] ? " " . $arParams['WRAPPER_CLASS'] :
 					$sFirstLT = explode(",", $arItem['DISPLAY_PROPERTIES']['CDP_G_OFFICE_PLACEMARK']['VALUE'])[1];
 				endif;?>
 
-				<script type="text/javascript">
+				<script>
 					ymaps.ready(function(){
 						// Создаем метку и задаем изображение для ее иконки
 		            	var myPlacemark = new ymaps.Placemark([<?=explode(",", $arItem['DISPLAY_PROPERTIES']['CDP_G_OFFICE_PLACEMARK']['VALUE'])[0]?>, <?=explode(",", $arItem['DISPLAY_PROPERTIES']['CDP_G_OFFICE_PLACEMARK']['VALUE'])[1]?>], {
@@ -104,7 +104,7 @@ $sWrapperClass = $arParams['WRAPPER_CLASS'] ? " " . $arParams['WRAPPER_CLASS'] :
 
 			<?endforeach;?>
 
-			<script type="text/javascript">
+			<script>
 				ymaps.ready(function(){
 					myMap.setCenter([<?=$sFirstLN?>, <?=$sFirstLT?>], 10);
 				});

@@ -287,11 +287,11 @@
 				</form>
 
 			</div>
-			<script type="text/javascript">
+			<script>
 				showAlertUp('geo-accept');
 			</script>
 			<?elseif(AB_S1::$GEODATA['GEO_EXIST'] == 0 && AB_S1::$GEODATA['OFF_GEOCITY_WINDOW'] != 1/* && !AB_S1::isBot()*/):?>
-				<script type="text/javascript">
+				<script>
 					showAlertUp('geo');
 				</script>
 			<?endif;?>
@@ -334,7 +334,7 @@
 	</div>
 
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
+	<script>
 	    (function (d, w, c) {
 	        (w[c] = w[c] || []).push(function() {
 	            try {

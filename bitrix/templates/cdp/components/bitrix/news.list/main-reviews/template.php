@@ -49,7 +49,7 @@ use Bitrix\Main\Localization\Loc;
 							</div>
 							<div class="reviews__item-person">
 								<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
-									<div class="reviews__item-name"><?=$arItem["NAME"]?></div>
+									<h4 class="reviews__item-name"><?=$arItem["NAME"]?></h4>
 								<?endif;?>
 								<?if($arItem["DISPLAY_PROPERTIES"]["CDP_R_POST"]["VALUE"]):?>
 									<div class="reviews__item-post"><?=$arItem["DISPLAY_PROPERTIES"]["CDP_R_POST"]["VALUE"]?></div>

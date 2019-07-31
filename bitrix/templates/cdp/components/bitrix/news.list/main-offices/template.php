@@ -25,7 +25,7 @@ $this->setFrameMode(true);
 		<div class="h1"><?=Loc::getMessage("CPD_MO_TITLE_2")?></div>
 		<div id="map"></div>
 
-		<script type="text/javascript">
+		<script>
 			var myMap,
 				myCollection,
 				PLACEMARKS = [];
@@ -65,7 +65,7 @@ $this->setFrameMode(true);
 
 		endif;?>
 
-		<script type="text/javascript">
+		<script>
 			ymaps.ready(function(){
 				// Создаем метку и задаем изображение для ее иконки
             	var myPlacemark = new ymaps.Placemark([<?=explode(",", $arItem['DISPLAY_PROPERTIES']['CDP_G_OFFICE_PLACEMARK']['VALUE'])[0]?>, <?=explode(",", $arItem['DISPLAY_PROPERTIES']['CDP_G_OFFICE_PLACEMARK']['VALUE'])[1]?>], {
@@ -88,7 +88,7 @@ $this->setFrameMode(true);
 
 	<?endforeach;?>
 
-	<script type="text/javascript">
+	<script>
 		ymaps.ready(function(){
 			//myMap.setCenter([<?=$sFirstLN?>, <?=$sFirstLT?>], <?=(count($arResult["ITEMS"])>1&&!AB_S1::$GEODATA['OFFICE_ID']?10:16)?>);
 			myMap.setCenter([<?=$sFirstLN?>, <?=$sFirstLT?>], <?=$nZoom?>);

@@ -2347,6 +2347,7 @@ a.attach-files-item__download {
 	font-weight: 300;
 	line-height: 1.6;
 	color: #43474b;
+	text-align: justify;
 }
 
 .company__right {

@@ -69,7 +69,7 @@ $APPLICATION->SetTitle("Партнёрам");
 				</div>
 				<div class="input-line input-line--submit">
 					<input type="hidden" name="AJAX_RENT" value="Y">
-					<label href="javascript:;" class="btn rent__form-btn">Отправить<input type="submit"></label>
+					<label class="btn rent__form-btn">Отправить<input type="submit"></label>
 				</div>
 			</div>
 		</div>

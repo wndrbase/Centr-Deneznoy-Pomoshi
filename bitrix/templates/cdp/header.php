@@ -63,9 +63,7 @@
 <html lang="<?=LANGUAGE_ID?>">
 <head>
 	<title><?=$APPLICATION->ShowTitle()?></title>
-
-  	<meta charset="utf-8">
-
+    
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" href="/favicon.png">
 	<meta name="format-detection" content="telephone=no">
@@ -109,8 +107,8 @@
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/js.js');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/add.js');
 	?>
-	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBnvs1bUx7yGlAzjtOGBIGK2hQOiaue9rU"></script>
-	<script type="text/javascript">
+
+	<script>
 		var SITE_TEMPLATE_PATH = '<?=SITE_TEMPLATE_PATH?>',
 			DOCUMENT_DOMAIN = '<?=$_SERVER["HTTP_HOST"]?>',
 			REGIONS_AND_CITIES = <?=CUtil::PhpToJSObject($AR_REGIONS_AND_CITIES)?>,
@@ -118,10 +116,9 @@
 			gMap,
 			gMarkersArray = [];
 	</script>
-	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-295294-bxw3l"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
-	</script>
-	<noscript><img src="https://vk.com/rtrg?p=VK-RTRG-295294-bxw3l" style="position:fixed; left:-999px;" alt=""/></noscript>
-	<script type="text/javascript">
+	<script>!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-295294-bxw3l"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+
+	<script>
 		var widgetCallbackId,
 			widgetFeedbackId,
 			widgetLoanId;
@@ -166,13 +163,17 @@
 
         gtag('config', 'UA-144819268-1');
     </script>
-	<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBnvs1bUx7yGlAzjtOGBIGK2hQOiaue9rU"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
+
 <body<?=($FULL_VERSION?' class="full-version"':'')?>>
+    <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-295294-bxw3l" style="position:fixed; left:-999px;" alt=""/></noscript>
 
 	<? $APPLICATION->ShowPanel();?>
 
-	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?157",t.onload=function(){VK.Retargeting.Init("VK-RTRG-263899-fDTPi"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-263899-fDTPi" style="position:fixed; left:-999px;" alt=""/></noscript>
+	<script>!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?157",t.onload=function(){VK.Retargeting.Init("VK-RTRG-263899-fDTPi"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-263899-fDTPi" style="position:fixed; left:-999px;" alt=""/></noscript>
 
 	<div class="frontend <?=$sWrapperClass?>">
 
