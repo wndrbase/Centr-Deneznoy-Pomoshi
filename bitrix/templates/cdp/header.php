@@ -157,6 +157,15 @@
 
 		};
 	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144819268-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144819268-1');
+    </script>
 	<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
 </head>
 <body<?=($FULL_VERSION?' class="full-version"':'')?>>
@@ -212,7 +221,7 @@
 									<?if(!$B_INDEX_PAGE):?>
 										<a href="/#calculator" class="btn header__apply-btn btn--red"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
 									<?else:?>
-										<a href="javascript:;" class="btn header__apply-btn btn--red header__apply-btn--calculator"><?=Loc::getMessage("H_BTN_SEND_LOAN")?></a>
+										<a href="javascript:;" class="btn header__apply-btn btn--red header__apply-btn--calculator"><?=Loc::getMessage("Google Analytics")?></a>
 									<?endif;?>
 
 								</div>
