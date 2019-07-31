@@ -18,6 +18,11 @@ ErrorDocument 404 /404.php
 
   Redirect 301 /organization/ /documents/
 
+  # редирект с index.php, index.html
+  RewriteCond %{THE_REQUEST} /(.*)index.php.*$
+  RewriteCond %{THE_REQUEST} !bitrix/admin/
+  RewriteRule .* /%1 [R=301,L]
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteCond %{REQUEST_FILENAME} !-d
