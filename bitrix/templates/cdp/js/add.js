@@ -945,7 +945,7 @@ jQuery(document).ready(function($) {
 	});
 
 	//Обратный звонок
-	$('form#form-callback').on('submit', function(event) {
+	$('form#form-callback').on('submit', function (event) {
 		event.preventDefault();
 
 		var thisForm = $(this),
@@ -953,69 +953,59 @@ jQuery(document).ready(function($) {
 
 		thisForm.find('.input--error').removeClass('input--error');
 
-		if(parseInt(thisForm.find('input[name="FZ_ACCEPT"]:checked').val()) != 1) {
-			thisForm.find('input[name="FZ_ACCEPT"]').closest('label').addClass('error-blink').one('click', function(event) {
+		if (parseInt(thisForm.find('input[name="FZ_ACCEPT"]:checked').val()) != 1) {
+			thisForm.find('input[name="FZ_ACCEPT"]').closest('label').addClass('error-blink').one('click', function (event) {
 				$(this).removeClass('error-blink');
 			});
-			setTimeout(function(){
+			setTimeout(function () {
 				thisForm.find('input[name="FZ_ACCEPT"]').closest('label').removeClass('error-blink');
 			}, 2000);
-		}
-		else {
-
+		} else {
 			$.ajax({
 				url: SITE_TEMPLATE_PATH + '/ajax/callback.php',
 				type: 'POST',
 				data: formData,
-			})
-			.done(function(data) {
+			}).done(function (data) {
 				var data = JSON.parse(data);
-				//console.log(data);
-				if(data.SUCCESS) {
+
+				if (data.SUCCESS) {
+					if (window.yaCounter45766392) {
+						window.yaCounter45766392.reachGoal('FORM_FEEDBACK_SEND');
+					}
+
+					if (window.ym) {
+						//ym(45766392, 'reachGoal', 'FORM_FEEDBACK_SEND');
+					}
+
 					thisForm.find('input[type="text"], input[type="tel"]').removeClass('input--actived').val("");
-					var oMsgSuccess = $('<div class="msg msg--success"><div>'+data.MESSAGE+'</div></div>').prependTo(thisForm);
-					setTimeout(function(){
+					var oMsgSuccess = $('<div class="msg msg--success"><div>' + data.MESSAGE + '</div></div>').prependTo(thisForm);
+					setTimeout(function () {
 						oMsgSuccess.remove();
 					}, 5000);
 				} else {
-
 					grecaptcha.reset(widgetCallbackId);
 
-					if(data.CAPTCHA) {
-
-						thisForm.find('.g-recaptcha').addClass('error-blink').one('click', function(event) {
+					if (data.CAPTCHA) {
+						thisForm.find('.g-recaptcha').addClass('error-blink').one('click', function (event) {
 							$(this).removeClass('error-blink');
 						});
 
-						setTimeout(function(){
+						setTimeout(function () {
 							thisForm.find('.g-recaptcha').removeClass('error-blink');
 						}, 2000);
+					} else {
 
-					}
-					else {
+						for (var p in data.MESSAGE) {
+							var thisField = data.MESSAGE[p].FIELD != 'USER_CITY' ? $('input[name="' + data.MESSAGE[p].FIELD + '"]') : $('select[name="' + data.MESSAGE[p].FIELD + '"]').next().find('span.select2-selection--single');
 
-						for(p in data.MESSAGE) {
-
-							var thisField = data.MESSAGE[p].FIELD != 'USER_CITY' ? $('input[name="'+data.MESSAGE[p].FIELD+'"]') : $('select[name="'+data.MESSAGE[p].FIELD+'"]').next().find('span.select2-selection--single');
-
-							thisField.addClass('input--error').one('click', function(event) {
+							thisField.addClass('input--error').one('click', function (event) {
 								$(this).removeClass('input--error');
 							});
-
 						}
-
 					}
-
 				}
-
-			})
-			.fail(function() {
-			})
-			.always(function() {
 			});
-
 		}
-
 
 		return false;
 	});

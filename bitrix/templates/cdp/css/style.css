@@ -443,7 +443,7 @@ a.header__geocity--selected {
 	/*padding: 19px 21px;*/
 	padding: 14px 21px;
 	width: 100%;
-	z-index: 999;
+	z-index: 899
 }
 
 .header__mobile-container--fixed .menu-mobile-toggle__line {
