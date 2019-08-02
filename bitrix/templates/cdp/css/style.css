@@ -257,16 +257,13 @@ a.header__geocity--selected {
 	margin-right: 0px;
 }
 
-.header__nav-item--active {
-
-}
-
 .header__nav-item a {
 	font-size: 16px;
 	font-weight: 400;
 	color: #21405b;
 }
 
+.header__nav-item--active a,
 .header__nav-item a:hover {
 	color: #2ba1d4;
 }

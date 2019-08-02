@@ -12,6 +12,9 @@
 		return new Function('return ' + fn)();
 	}*/
 
+	if (!document.getElementById('calculator'))
+		return;
+
 	var noUiSliderSum = document.getElementById('calc-sum-slider'),
 		noUiSliderDate = document.getElementById('calc-date-slider'),
 
