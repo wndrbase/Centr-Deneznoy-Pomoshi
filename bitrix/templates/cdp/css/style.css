@@ -3354,3 +3354,28 @@ a.organizations__show-requisites:after {
 	color: #2ba1d4;
 }
 /*FOOTER*/
+
+#btn-scroll-top {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 10px 30px 0 rgba(31, 50, 66, 0.1);
+	background-color: #fff;
+	cursor: pointer;
+	transition: opacity 0.3s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#btn-scroll-top.show {
+	opacity: 0.6;
+	pointer-events: auto;
+}
+
+#btn-scroll-top.show:hover {
+	opacity: 1;
+}

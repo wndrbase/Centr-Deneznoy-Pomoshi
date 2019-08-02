@@ -41,6 +41,20 @@ jQuery(document).ready(function($) {
 	if(mobileAndTabletCheck())
 		$('.footer__full-version').css('display', 'block');
 
+	var btnScrollTop = document.getElementById('btn-scroll-top');
+
+	if (btnScrollTop) {
+		window.addEventListener('scroll', function () {
+			window.requestAnimationFrame(function () {
+				btnScrollTop.classList.toggle('show', window.innerHeight < window.pageYOffset);
+			});
+		});
+
+		btnScrollTop.addEventListener('click', function(){
+			document.body.scrollIntoView({ behavior: 'smooth' });
+		});
+	}
+
 	function updateSelect2(selector) {
 		var t = $(selector);
 		var minimum = t.is('[data-notsearch]') ? Infinity : 10;

@@ -79,6 +79,11 @@
 
 		</footer>
 
+
+        <button id="btn-scroll-top" title="Наверх">
+            <svg width="17" height="19" viewBox="0 0 17 19" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 18.5V3.914l5.293 5.293 1.414-1.414L8.5.086.793 7.793l1.414 1.414L7.5 3.914V18.5z" fill="#21405B" fill-rule="nonzero"/></svg>
+        </button>
+
 		<!-- alert__up -->
 		<div class="alert_up alert_up--hide flexbox flexbox--center flexbox--column flexbox--align-center">
 
