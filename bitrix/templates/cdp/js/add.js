@@ -991,6 +991,13 @@ jQuery(document).ready(function($) {
 						//ym(45766392, 'reachGoal', 'FORM_FEEDBACK_SEND');
 					}
 
+					if (window.gtag) {
+						gtag('event', 'send', {
+							event_category: 'form',
+							event_label: 'FORM_FEEDBACK_SEND'
+						});
+					}
+
 					thisForm.find('input[type="text"], input[type="tel"]').removeClass('input--actived').val("");
 					var oMsgSuccess = $('<div class="msg msg--success"><div>' + data.MESSAGE + '</div></div>').prependTo(thisForm);
 					setTimeout(function () {
