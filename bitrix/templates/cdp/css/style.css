@@ -3347,7 +3347,6 @@ a.organizations__show-requisites:after {
 
 .footer__wonderbase a {
 	text-decoration: underline;
-	color: #1682da;
 	color: #2ba1d4;
 }
 /*FOOTER*/
@@ -3375,4 +3374,11 @@ a.organizations__show-requisites:after {
 
 #btn-scroll-top.show:hover {
 	opacity: 1;
+}
+
+@media only screen and (min-width: 1600px) {
+	#btn-scroll-top {
+		bottom: 220px;
+		right: 95px;
+	}
 }
