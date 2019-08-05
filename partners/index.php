@@ -65,7 +65,11 @@ $APPLICATION->SetTitle("Партнёрам");
 					<textarea name="USER_MESSAGE" class="input" placeholder="Ваше сообщение"></textarea>							
 				</div>
 				<div class="input-line">
-					<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1">Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a></label>
+					<label class="checkbox">
+                        <input type="checkbox" name="FZ_ACCEPT" value="1">
+                        <i></i>
+                        Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a>
+                    </label>
 				</div>
 				<div class="input-line input-line--submit">
 					<input type="hidden" name="AJAX_RENT" value="Y">

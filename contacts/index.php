@@ -272,7 +272,9 @@ $APPLICATION->SetTitle("Контакты");
 			</div>
 
 			<div class="input-line">
-				<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1">
+				<label class="checkbox">
+                    <input type="checkbox" name="FZ_ACCEPT" value="1">
+                    <i></i>
                     Я согласен(а) на обработку персональных данных и ознакомлен(а)
                     с
                     <a href="/upload/docs/privacy-policy.pdf" target="_blank">Политикой конфиденциальности</a>

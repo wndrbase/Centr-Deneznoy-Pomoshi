@@ -92,7 +92,11 @@
 					<?=bitrix_sessid_post()?>
 					<h3><?=Loc::getMessage("F_AU_TEST_MODE_TITLE")?></h3>
 					<div class="input-line">
-						<label class="checkbox"><input type="checkbox" name="CB_TEST_MODE" value="1"><?=Loc::getMessage("F_AU_TEST_MODE_CHECKBOX")?></label>
+						<label class="checkbox">
+                            <input type="checkbox" name="CB_TEST_MODE" value="1">
+                            <i></i>
+                            <?=Loc::getMessage("F_AU_TEST_MODE_CHECKBOX")?>
+                        </label>
 					</div>
 					<div class="input-line input-line--submit">
 						<label class="btn btn--red"><?=Loc::getMessage("F_AU_TEST_MODE_SUBMIT")?><input type="submit"></label>
@@ -125,7 +129,11 @@
 						</select>
 					</div>
 					<div class="input-line">
-						<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1">Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a></label>
+						<label class="checkbox">
+                            <input type="checkbox" name="FZ_ACCEPT" value="1">
+                            <i></i>
+                            Я согласен(а) на обработку персональных данных и ознакомлен(а) с <a href="/upload/medialibrary/04d/PDn-TSDP-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП"</a>, <a href="/upload/medialibrary/2e8/PDn-TSentr-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ЦЕНТР"</a>, <a href="/upload/medialibrary/0c0/PDn-Don-sayt.pdf" target="_blank">Политикой конфиденциальности ООО МКК "ЦДП-ДОН"</a>
+                        </label>
 					</div>
 					<?if(USE_GOOGLE_CAPTCHA_V2):?>
 					<div class="input-line">
@@ -165,7 +173,11 @@
 						<span><?=Loc::getMessage("F_AU_FORM_JOB_BTN_ATTACH_NOTE")?></span>
 					</div>
 					<div class="input-line">
-						<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1"><?=Loc::getMessage("F_AU_FORM_JOB_FZ")?></label>
+						<label class="checkbox">
+                            <input type="checkbox" name="FZ_ACCEPT" value="1">
+                            <i></i>
+                            <?=Loc::getMessage("F_AU_FORM_JOB_FZ")?>
+                        </label>
 					</div>
 					<div class="input-line input-line--submit">
 						<input type="hidden" name="USER_JOB_NAME" value="">
@@ -203,7 +215,11 @@
 						<input type="email" name="EMAIL" class="input" placeholder="<?=Loc::getMessage("F_AU_FORM_LOAN_PH_EMAIL")?>">
 					</div>
 					<div class="input-line">
-						<label class="checkbox"><input type="checkbox" name="FZ_ACCEPT" value="1"><?=Loc::getMessage("F_AU_FORM_LOAN_FZ")?></label>
+						<label class="checkbox">
+                            <input type="checkbox" name="FZ_ACCEPT" value="1">
+                            <i></i>
+                            <?=Loc::getMessage("F_AU_FORM_LOAN_FZ")?>
+                        </label>
 					</div>
 					<?if(USE_GOOGLE_CAPTCHA_V2):?>
 					<div class="input-line">
