@@ -10,7 +10,7 @@
 
 		</main>
 
-		<?if($APPLICATION->GetProperty("PROMO_BLOCK") == 'Y' && !$B_INDEX_PAGE):?>
+		<?if($APPLICATION->GetProperty("PROMO_BLOCK") == 'Y' && !$B_INDEX_PAGE && !defined('ERROR_404')):?>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:main.include",
 				"",

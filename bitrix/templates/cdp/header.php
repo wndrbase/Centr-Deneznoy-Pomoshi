@@ -330,7 +330,7 @@
 
 		<main class="main<?if(strlen($sBackgroundImage)>0):?> main--pad<?endif;?><?if($B_ABOUT_PAGE || $B_JOBS_PAGE):?> main--no-pad-bottom<?endif;?>">
 
-			<?if(strlen($sBackgroundImage) == 0 && !$B_INDEX_PAGE && $sWrapperClass != 'page-contacts'):?>
+			<?if(strlen($sBackgroundImage) == 0 && !$B_INDEX_PAGE && $sWrapperClass != 'page-contacts' && !defined('ERROR_404')):?>
 			<div class="center clr">
 				<h1><?=$APPLICATION->ShowTitle(false)?></h1>
 				<?$APPLICATION->IncludeComponent(
