@@ -21,6 +21,13 @@ $aMenuLinks = Array(
 		Array(),
 		""
 	),
+    Array(
+        "Услуги",
+        "/services/",
+        Array(),
+        Array(),
+        ""
+    ),
 	Array(
 		"Карта сайта",
 		"/site-map/",

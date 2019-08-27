@@ -1,11 +1,11 @@
 <?php
 $arUrlRewrite=array (
-  0 => 
+  0 =>
   array (
-    'CONDITION' => '#^/akcii/#',
+    'CONDITION' => '#^/services/#',
     'RULE' => '',
     'ID' => 'bitrix:news',
-    'PATH' => '/stock/index.php',
+    'PATH' => '/services/index.php',
     'SORT' => 100,
   ),
   1 => 
