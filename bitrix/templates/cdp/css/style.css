@@ -1457,6 +1457,7 @@ a.header__geocity--selected {
 
 .shared-block p {
 	margin-bottom: 16px;
+	text-align: center;
 }
 
 .shared-block__list {
