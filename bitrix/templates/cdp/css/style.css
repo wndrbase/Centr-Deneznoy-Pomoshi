@@ -1460,6 +1460,8 @@ a.header__geocity--selected {
 }
 
 .shared-block__list {
+	display: flex;
+	justify-content: center;
 }
 
 .shared-block__item {
