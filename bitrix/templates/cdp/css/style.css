@@ -1206,6 +1206,16 @@ a.header__geocity--selected {
 	margin-bottom: 55px;
 }
 
+.news--home .slick-slider .news__item-caption {
+	min-height: 42px;
+}
+
+@media only screen and (max-width: 680px) {
+	.news--home .slick-slider .news__item-caption {
+		min-height: 0;
+	}
+}
+
 .news__all {
 	text-align: center;
 	margin-bottom: 40px;
@@ -1359,10 +1369,13 @@ a.header__geocity--selected {
 }
 
 .news__item-title {
-	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.news__item-title--show-more {
+	flex: 1;
 }
 
 .news__item-caption {

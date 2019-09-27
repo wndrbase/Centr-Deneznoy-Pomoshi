@@ -21,6 +21,8 @@ if (empty($arResult["ITEMS"])) return;
         <!--RestartBuffer-->
         <? foreach ($arResult["ITEMS"] as $arItem): ?>
             <?
+            $bShowPreview = $arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"];
+
             $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
             $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), ["CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')]);
             ?>
@@ -37,11 +39,11 @@ if (empty($arResult["ITEMS"])) return;
                     <time class="news__item-date" datetime="<?= date("Y-m-d", strtotime($arItem["ACTIVE_FROM"])) ?>"><?= $arItem["DISPLAY_ACTIVE_FROM"] ?></time>
                 <? endif ?>
 
-                <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-title">
+                <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-title<?= $bShowPreview ? '' : ' news__item-title--show-more'; ?>">
                     <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
                         <span class="news__item-caption"><?= $arItem["NAME"] ?></span>
                     <? endif; ?>
-                    <? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]): ?>
+                    <? if ($bShowPreview): ?>
                         <span class="news__item-anounce"><?= $arItem["PREVIEW_TEXT"]; ?></span>
                     <? else: ?>
                         <span class="news__item-anounce">Читать подробнее...</span>
