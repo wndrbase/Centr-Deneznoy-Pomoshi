@@ -1273,6 +1273,8 @@ a.header__geocity--selected {
 	width: 250px;
 	float: left;
 	margin: 21px;
+	display: flex;
+	flex-direction: column;
 	/*margin-bottom: 57px;*/
 }
 
@@ -1357,7 +1359,10 @@ a.header__geocity--selected {
 }
 
 .news__item-title {
-
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .news__item-caption {
