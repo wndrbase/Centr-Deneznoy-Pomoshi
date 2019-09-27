@@ -194,7 +194,7 @@ $APPLICATION->SetTitle("Центр денежной помощи");
 			"DISPLAY_DATE" => "Y",
 			"DISPLAY_NAME" => "Y",
 			"DISPLAY_PICTURE" => "Y",
-			"DISPLAY_PREVIEW_TEXT" => "Y",
+			"DISPLAY_PREVIEW_TEXT" => "N",
 			"DISPLAY_TOP_PAGER" => "N",
 			"FIELD_CODE" => array("", ""),
 			"FILTER_NAME" => "",

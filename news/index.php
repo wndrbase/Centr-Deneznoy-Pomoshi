@@ -34,7 +34,7 @@ $APPLICATION->SetTitle("Новости");
 			"DISPLAY_DATE" => "Y",
 			"DISPLAY_NAME" => "Y",
 			"DISPLAY_PICTURE" => "Y",
-			"DISPLAY_PREVIEW_TEXT" => "Y",
+			"DISPLAY_PREVIEW_TEXT" => "N",
 			"DISPLAY_TOP_PAGER" => "N",
 			"FILE_404" => "",
 			"HIDE_LINK_WHEN_NO_DETAIL" => "N",

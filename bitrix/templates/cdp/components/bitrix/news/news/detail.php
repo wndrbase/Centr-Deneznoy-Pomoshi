@@ -118,7 +118,7 @@ $this->setFrameMode(true);
 			"!"."ID" => $ElementID,
 		);
 		?>
-		<hr /><h3><?=GetMessage("CATEGORIES")?></h3>
+		<hr /><h3><?=GetMessage("CATEGORIES")?>1</h3>
 		<?foreach($arParams["CATEGORY_IBLOCK"] as $iblock_id):?>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:news.list",

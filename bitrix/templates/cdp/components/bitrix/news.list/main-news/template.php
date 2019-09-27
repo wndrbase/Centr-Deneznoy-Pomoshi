@@ -46,6 +46,8 @@ if (empty($arResult["ITEMS"])) return;
                     <? endif; ?>
                     <? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]): ?>
                         <span class="news__item-anounce"><?= $arItem["PREVIEW_TEXT"]; ?></span>
+                    <? else: ?>
+                        <span class="news__item-anounce">Читать подробнее...</span>
                     <? endif; ?>
                 </a>
             </li>
