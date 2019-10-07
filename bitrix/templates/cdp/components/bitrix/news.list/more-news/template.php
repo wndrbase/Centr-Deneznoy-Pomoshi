@@ -16,10 +16,14 @@ use Bitrix\Main\Localization\Loc;
 
 if (empty($arResult["ITEMS"])) return;
 ?>
+
+
 <div class="center clr">
     <div class="news news--more">
         <div class="h1"><?= Loc::getMessage("CDP_N_MORE_NEWS") ?></div>
-        <ul class="news__list clr">
+
+        <div class="slider news-slider-more">
+
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
                 <?
                 $bShowPreview = $arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"];
@@ -27,32 +31,42 @@ if (empty($arResult["ITEMS"])) return;
                 $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
                 $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), ["CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')]);
                 ?>
-                <li class="news__item" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-                    <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-img">
-                        <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
-                            <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>" title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>">
-                        <? else: ?>
-                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/news_blank.jpg" alt="<?= htmlspecialcharsbx($arItem["NAME"]) ?>" title="<?= htmlspecialcharsbx($arItem["NAME"]) ?>">
-                        <? endif; ?>
-                    </a>
+                <div class="news-slider-more-item" >
 
-                    <? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]): ?>
-                        <time class="news__item-date" datetime="<?= date("Y-m-d", strtotime($arItem["ACTIVE_FROM"])) ?>"><?= $arItem["DISPLAY_ACTIVE_FROM"] ?></time>
-                    <? endif ?>
+                    <li class="" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+                        <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-img">
+                            <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
+                                <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>" title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>">
+                            <? else: ?>
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/news_blank.jpg" alt="<?= htmlspecialcharsbx($arItem["NAME"]) ?>" title="<?= htmlspecialcharsbx($arItem["NAME"]) ?>">
+                            <? endif; ?>
+                        </a>
 
-                    <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-title<?= $bShowPreview ? '' : ' news__item-title--show-more'; ?>">
-                        <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
-                            <span class="news__item-caption"><?= $arItem["NAME"] ?></span>
-                        <? endif; ?>
-                        <? if ($bShowPreview): ?>
-                            <span class="news__item-anounce"><?= $arItem["PREVIEW_TEXT"]; ?></span>
-                        <? else: ?>
-                            <span class="news__item-anounce">Читать подробнее...</span>
-                        <? endif; ?>
-                    </a>
-                </li>
+                        <? if ($arParams["DISPLAY_DATE"] != "N" && $arItem["DISPLAY_ACTIVE_FROM"]): ?>
+                            <time class="news__item-date" datetime="<?= date("Y-m-d", strtotime($arItem["ACTIVE_FROM"])) ?>"><?= $arItem["DISPLAY_ACTIVE_FROM"] ?></time>
+                        <? endif ?>
+
+                        <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="news__item-title<?= $bShowPreview ? '' : ' news__item-title--show-more'; ?>">
+                            <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
+                                <span class="news__item-caption"><?= $arItem["NAME"] ?></span>
+                            <? endif; ?>
+                            <? if ($bShowPreview): ?>
+                                <span class="news__item-anounce"><?= $arItem["PREVIEW_TEXT"]; ?></span>
+                            <? else: ?>
+                                <span class="news__item-anounce">Читать подробнее...</span>
+                            <? endif; ?>
+                        </a>
+                    </li>
+
+                </div>
             <? endforeach; ?>
-        </ul>
+
+
+        </div>
+
+
+        <br/>
+
 
         <a href="<?= $arResult["ITEMS"][0]["LIST_PAGE_URL"] ?>" class="btn news__btn-more news__btn-more--all"><?= Loc::getMessage("CDP_N_ALL") ?></a>
     </div>
