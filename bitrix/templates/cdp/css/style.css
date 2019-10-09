@@ -2508,6 +2508,18 @@ a.attach-files-item__download {
 	z-index: 1;
 }
 
+@media (min-width: 1200px) {
+	.jobs-list__box--open{
+		width: 555px;
+	}
+}
+@media (max-width: 960px) {
+	.jobs-list__box--open{
+		width:100%;
+	}
+}
+
+
 .jobs-list__item:nth-child(odd) .jobs-list__box {
 	margin-right: 15px;
 }
