@@ -2517,6 +2517,18 @@ a.attach-files-item__download {
 	.jobs-list__box--open{
 		width:100%;
 	}
+
+	.jobs-list__item {
+		height: auto;
+		min-height:280px;
+
+	}
+	.jobs-list__box--open {
+		 position: static;
+
+	}
+
+
 }
 
 
